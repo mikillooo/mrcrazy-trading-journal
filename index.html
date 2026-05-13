@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- htmlaunch:enhanced:v2 -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22hsl(283%2C72%25%2C58%25)%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22hsl(313%2C72%25%2C44%25)%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2246%22%20text-anchor%3D%22middle%22%20font-family%3D%22ui-sans-serif%2Csystem-ui%2C-apple-system%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3EM%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="canonical" href="https://mikillooo.github.io/mrcrazy-trading-journal/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mr.Crazy - Trading Journal">
+<meta property="og:title" content="Mr.Crazy - Trading Journal">
+<meta property="og:description" content="Professional Trading Journal - Track trades, emotions, rules &amp; performance">
+<meta property="og:url" content="https://mikillooo.github.io/mrcrazy-trading-journal/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fmikillooo.github.io%2Fmrcrazy-trading-journal%2F?w=1200&h=630">
+<meta property="og:image:alt" content="Mr.Crazy - Trading Journal">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mr.Crazy - Trading Journal">
+<meta name="twitter:description" content="Professional Trading Journal - Track trades, emotions, rules &amp; performance">
+<meta name="twitter:image" content="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fmikillooo.github.io%2Fmrcrazy-trading-journal%2F?w=1200&h=630">
+<meta name="twitter:image:alt" content="Mr.Crazy - Trading Journal">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#0a0e17" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f1f5f9" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mr.Crazy">
+<meta name="description" content="Professional Trading Journal - Track trades, emotions, rules & performance">
+<meta name="application-name" content="Mr.Crazy Trading Journal">
+<meta name="format-detection" content="telephone=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="msapplication-TileColor" content="#0a0e17">
+<link rel="manifest" id="pwa-manifest">
+<link rel="apple-touch-icon" href="https://iili.io/BmHssUJ.png">
+<link rel="mask-icon" href="https://i.ibb.co/m5jj1g8m/profile.png" color="#6366f1">
+<title>Mr.Crazy - Trading Journal</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<style>
+:root { --bg: #0a0e17; --bg2: #111827; --bg3: #1a2035; --text: #e2e8f0; --text2: #94a3b8; --text3: #64748b; --accent: #6366f1; --accent2: #818cf8; --glow: rgba(99,102,241,0.25); --green: #10b981; --green-bg: rgba(16,185,129,0.12); --red: #ef4444; --red-bg: rgba(239,68,68,0.12); --yellow: #f59e0b; --yellow-bg: rgba(245,158,11,0.12); --gold: #fbbf24; --border: rgba(255,255,255,0.06); --glass: rgba(255,255,255,0.03); --card-bg: rgba(255,255,255,0.03); --card-border: rgba(255,255,255,0.08); --shadow: 0 8px 32px rgba(0,0,0,0.4); --radius: 16px; --radius-sm: 12px; --radius-xs: 8px; --progress-bg: rgba(255,255,255,0.06); --safe-top: env(safe-area-inset-top); --safe-bottom: env(safe-area-inset-bottom); }
+.light-mode { --bg: #f1f5f9; --bg2: #ffffff; --bg3: #f8fafc; --text: #1e293b; --text2: #64748b; --text3: #94a3b8; --accent: #6366f1; --accent2: #7c3aed; --glow: rgba(99,102,241,0.15); --green: #059669; --green-bg: rgba(5,150,105,0.08); --red: #dc2626; --red-bg: rgba(220,38,38,0.08); --yellow: #d97706; --yellow-bg: rgba(217,119,6,0.08); --border: rgba(0,0,0,0.08); --glass: rgba(255,255,255,0.8); --card-bg: #ffffff; --card-border: rgba(0,0,0,0.08); --shadow: 0 4px 20px rgba(0,0,0,0.06); --progress-bg: rgba(0,0,0,0.06); }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif; background:var(--bg); color:var(--text); min-height:100vh; overflow-x:hidden; transition: background 0.5s, color 0.5s; padding-top: var(--safe-top); padding-bottom: var(--safe-bottom); }
+::-webkit-scrollbar { width:6px; } ::-webkit-scrollbar-track { background:transparent; } ::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
+.bg-fx { position:fixed; top:0; left:0; width:100%; height:100%; overflow:hidden; z-index:-1; pointer-events:none; }
+.blob { position:absolute; border-radius:50%; filter:blur(100px); opacity:0.3; animation:blobMove 20s ease-in-out infinite alternate; }
+.b1 { width:500px; height:500px; background:var(--accent); top:-150px; left:-150px; }
+.b2 { width:350px; height:350px; background:var(--green); bottom:-50px; right:5%; animation-delay:-7s; }
+.b3 { width:280px; height:280px; background:var(--gold); top:35%; right:15%; animation-delay:-12s; opacity:0.12; }
+@keyframes blobMove { 0% { transform:translate(0,0) scale(1); } 100% { transform:translate(30px,-20px) scale(1.05); } }
+.bg-grid { position:absolute; inset:0; background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px); background-size:60px 60px; opacity:0.15; animation:gridMove 80s linear infinite; }
+@keyframes gridMove { 0%{transform:translate(0,0)} 100%{transform:translate(60px,60px)} }
+.cursor-glow { position:fixed; width:350px; height:350px; border-radius:50%; background:radial-gradient(circle, var(--glow) 0%, transparent 70%); pointer-events:none; z-index:0; transition:transform 0.15s ease-out, opacity 0.3s ease; opacity:0.5; }
+@media (max-width:768px) { .cursor-glow { display:none; } }
+@keyframes fadeIn { from { opacity:0; transform:translateY(15px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeInUp { from { opacity:0; transform:translateY(25px); } to { opacity:1; transform:translateY(0); } }
+@keyframes popIn { 0% { transform:scale(0.92); opacity:0; } 70% { transform:scale(1.01); } 100% { transform:scale(1); opacity:1; } }
+@keyframes gradientShift { 0%,100% { background-position:0% 50%; } 50% { background-position:100% 50%; } }
+@keyframes dataUpdate { 0% { opacity:0.4; transform:scale(0.97); } 100% { opacity:1; transform:scale(1); } }
+@keyframes slideInRight { from { opacity:0; transform:translateX(30px); } to { opacity:1; transform:translateX(0); } }
+@keyframes slideInLeft { from { opacity:0; transform:translateX(-30px); } to { opacity:1; transform:translateX(0); } }
+.menu-overlay { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.6); backdrop-filter:blur(4px); z-index:199; opacity:0; visibility:hidden; transition:all 0.3s ease; }
+.menu-overlay.active { opacity:1; visibility:visible; }
+.sidebar { position:fixed; left:0; top:0; width:280px; height:100vh; background:rgba(17,24,39,0.95); backdrop-filter:blur(30px); border-right:1px solid var(--border); padding:24px 16px; z-index:200; display:flex; flex-direction:column; overflow-y:auto; transform:translateX(-100%); transition:transform 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
+.sidebar.active { transform:translateX(0); }
+.light-mode .sidebar { background:rgba(255,255,255,0.98); }
+.top-bar { position:fixed; top:0; left:0; right:0; height:60px; background:rgba(17,24,39,0.85); backdrop-filter:blur(20px); border-bottom:1px solid var(--border); z-index:150; display:flex; align-items:center; padding:0 20px; gap:12px; padding-top: var(--safe-top); }
+.light-mode .top-bar { background:rgba(255,255,255,0.9); }
+.hamburger { width:44px; height:44px; display:flex; align-items:center; justify-content:center; cursor:pointer; border-radius:12px; transition:all 0.3s; border:none; background:none; color:var(--text); font-size:22px; flex-shrink:0; }
+.hamburger:hover { background:rgba(99,102,241,0.1); color:var(--accent); transform:scale(1.05); }
+.hamburger:active { transform:scale(0.95); }
+.top-bar-title { font-size:18px; font-weight:800; background:linear-gradient(135deg,var(--text),var(--accent2),var(--gold)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-size:200% 200%; animation:gradientShift 4s ease infinite; }
+.close-menu { position:absolute; top:16px; right:16px; width:36px; height:36px; border-radius:10px; display:flex; align-items:center; justify-content:center; cursor:pointer; color:var(--text2); font-size:18px; transition:all 0.3s; border:none; background:none; }
+.close-menu:hover { background:rgba(239,68,68,0.1); color:var(--red); transform:rotate(90deg); }
+.logo-box { padding:8px 12px; margin-bottom:24px; cursor:pointer; }
+.logo-inner { display:flex; align-items:center; gap:14px; padding:4px 0; transition:transform 0.4s; }
+.logo-box:hover .logo-inner { transform:translateX(4px); }
+.logo-icon { width:44px; height:44px; border-radius:50%; overflow:hidden; box-shadow:0 4px 20px var(--glow); animation:logoPulse 3s ease-in-out infinite alternate; }
+.logo-icon img { width:100%; height:100%; object-fit:cover; }
+@keyframes logoPulse { 0%{box-shadow:0 4px 15px var(--glow)} 100%{box-shadow:0 8px 30px var(--glow)} }
+.logo-box:hover .logo-icon { transform:rotate(10deg) scale(1.1); }
+.logo-info .lt { font-size:18px; font-weight:800; background:linear-gradient(135deg,var(--text),var(--accent2),var(--gold)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-size:200% 200%; animation:gradientShift 4s ease infinite; }
+.logo-info .ls { font-size:9px; color:var(--text2); letter-spacing:2.5px; text-transform:uppercase; }
+.nav { flex:1; }
+.nav-item { display:flex; align-items:center; gap:14px; padding:13px 14px; border-radius:12px; cursor:pointer; color:var(--text2); font-weight:500; font-size:14px; transition:all 0.35s; margin-bottom:4px; position:relative; }
+.nav-item:hover { background:rgba(99,102,241,0.08); color:var(--text); transform:translateX(6px); }
+.nav-item.active { background:rgba(99,102,241,0.12); color:var(--accent2); }
+.nav-item.active::before { content:''; position:absolute; left:0; top:50%; transform:translateY(-50%); width:3px; height:60%; background:linear-gradient(180deg, var(--accent), var(--green)); border-radius:2px; animation:barSlideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+@keyframes barSlideIn { from { height:0; opacity:0; } to { height:60%; opacity:1; } }
+.ni { font-size:20px; transition:transform 0.35s; filter:grayscale(0.3); }
+.nav-item:hover .ni { transform:scale(1.2) rotate(-5deg); filter:grayscale(0); }
+.nav-item.active .ni { filter:grayscale(0); }
+.main { padding:76px 32px 28px; min-height:100vh; padding-bottom:calc(100px + var(--safe-bottom)); transition:all 0.3s; }
+.page { display:none; }
+.page.active { display:block; animation:pageSlideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+@keyframes pageSlideIn { from { opacity:0; transform:translateY(20px) scale(0.98); } to { opacity:1; transform:translateY(0) scale(1); } }
+.page-header { margin-bottom:24px; }
+.page-title { font-size:28px; font-weight:800; margin-bottom:4px; }
+.page-sub { color:var(--text2); font-size:14px; }
+.account-bar { display:flex; align-items:center; gap:12px; margin-bottom:24px; flex-wrap:wrap; animation:fadeInUp 0.5s 0.1s backwards; position:relative; transition: opacity 0.25s ease, transform 0.25s ease; }
+.account-bar.switching { opacity:0; transform:translateY(5px); pointer-events:none; }
+.acc-label { font-size:13px; font-weight:600; color:var(--text2); }
+.acc-select-wrap { position:relative; flex:1; max-width:240px; min-width:160px; }
+.acc-select { width:100%; padding:10px 36px 10px 14px; border-radius:12px; border:1px solid var(--border); background:var(--bg2); color:var(--text); font-size:14px; cursor:pointer; appearance:none; transition:all 0.3s; }
+.light-mode .acc-select { background:var(--bg); }
+.acc-select:focus { outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--glow); }
+.select-arr { position:absolute; right:12px; top:50%; transform:translateY(-50%); pointer-events:none; color:var(--text2); font-size:10px; transition:transform 0.3s; }
+.acc-select:focus + .select-arr { transform:translateY(-50%) rotate(180deg); color:var(--accent); }
+.cards-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:14px; margin-bottom:24px; }
+.card { background:var(--card-bg); backdrop-filter:blur(16px); border:1px solid var(--card-border); border-radius:16px; padding:18px; box-shadow:var(--shadow); transition:all 0.4s; animation:popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) backwards; position:relative; overflow:hidden; }
+.card:hover { transform:translateY(-5px) scale(1.01); box-shadow:0 16px 40px rgba(0,0,0,0.45), 0 0 20px var(--glow); }
+.card-label { font-size:12px; color:var(--text2); margin-bottom:6px; margin-top: 4px; font-weight:500; text-transform:uppercase; letter-spacing:0.5px; position:relative; z-index:1; }
+.card-value { font-size:26px; font-weight:800; position:relative; z-index:1; }
+.card-sub { font-size:11px; color:var(--text3); margin-top:4px; font-weight:500; position:relative; z-index:1; }
+.card-curve { width:100%; height:40px; margin-top:10px; position:relative; z-index:1; }
+.card-curve svg { width:100%; height:100%; }
+.cv-green { color:var(--green); } .cv-red { color:var(--red); }
+.rule-adherence-card { background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(16,185,129,0.05)); border:1px solid var(--card-border); border-radius:16px; padding:24px; margin-bottom:20px; animation:fadeIn 0.6s 0.2s backwards; }
+.rule-adherence-card .card-label { font-size:15px; font-weight:700; margin-bottom:18px; color:var(--text); }
+.rule-bar-row { display:flex; align-items:center; gap:16px; margin-bottom:14px; }
+.rule-bar-row:last-child { margin-bottom:0; }
+.rule-bar-label { width:150px; font-size:13px; color:var(--text2); font-weight:500; flex-shrink:0; }
+.rule-bar-track { flex:1; height:28px; background:var(--progress-bg); border-radius:14px; overflow:hidden; }
+.rule-bar-fill { height:100%; border-radius:14px; transition:width 1.2s cubic-bezier(0.34, 1.56, 0.64, 1); background: linear-gradient(90deg, #10b981, #34d399); }
+.rule-bar-pct { width:48px; font-size:14px; font-weight:700; color:var(--text); text-align:right; }
+.emo-analytics-card { background: linear-gradient(135deg, rgba(16,185,129,0.05), rgba(99,102,241,0.05)); border:1px solid var(--card-border); border-radius:16px; padding:24px; margin-bottom:20px; animation:fadeIn 0.6s 0.3s backwards; }
+.emo-analytics-card .card-label { font-size:15px; font-weight:700; margin-bottom:18px; color:var(--text); }
+.emo-bar-row { display:flex; align-items:center; gap:12px; margin-bottom:10px; }
+.emo-bar-row:last-child { margin-bottom:0; }
+.emo-bar-label { width:140px; font-size:13px; color:var(--text2); font-weight:500; display:flex; align-items:center; gap:6px; }
+.emo-bar-track { flex:1; height:28px; background:var(--progress-bg); border-radius:14px; overflow:hidden; }
+.emo-bar-fill { height:100%; border-radius:14px; transition:width 1.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.emo-bar-fill.pos { background: linear-gradient(90deg, #10b981, #34d399); }
+.emo-bar-fill.neg { background: linear-gradient(90deg, #ef4444, #f87171); }
+.emo-bar-count { width:40px; font-size:14px; font-weight:700; color:var(--text); text-align:right; }
+.chart-wrap { position:relative; width:100%; height:260px; }
+.chart-svg { width:100%; height:100%; }
+.chart-tip { position:absolute; padding:8px 12px; background:var(--bg2); border:1px solid var(--border); border-radius:8px; font-size:12px; pointer-events:none; opacity:0; z-index:10; transition:opacity 0.2s; }
+.chart-tip.show { opacity:1; }
+.eq-breakdown { display:flex; gap:16px; padding:20px 24px; border-top:1px solid var(--card-border); }
+.eq-stat { flex:1; display:flex; align-items:center; gap:12px; padding:14px 18px; border-radius:12px; background:var(--bg2); border:1px solid var(--border); transition:transform 0.3s; }
+.eq-stat:hover { transform:translateY(-2px); }
+.eq-stat-icon { width:40px; height:40px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:20px; }
+.eq-stat-icon.win { background:var(--green-bg); }
+.eq-stat-icon.loss { background:var(--red-bg); }
+.eq-stat-icon.be { background:var(--yellow-bg); }
+.eq-stat-info .es-label { font-size:11px; color:var(--text2); font-weight:600; text-transform:uppercase; letter-spacing:0.5px; }
+.eq-stat-info .es-val { font-size:22px; font-weight:800; margin-top:2px; }
+.calendar-container { animation:fadeIn 0.5s 0.3s backwards; }
+.calendar-nav { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; gap:10px; flex-wrap:wrap; }
+.cal-controls { display:flex; align-items:center; gap:8px; }
+.cal-btn { background:none; border:1px solid var(--border); cursor:pointer; font-size:14px; color:var(--text2); padding:8px 14px; border-radius:8px; transition:all 0.3s; display:flex; align-items:center; gap:6px; }
+.cal-btn:hover { color:var(--accent); border-color:var(--accent); transform:translateY(-2px); background:rgba(99,102,241,0.05); }
+.cal-btn.today-btn { background:var(--accent); color:white; border-color:var(--accent); font-weight:600; font-size:12px; }
+.cal-title { font-weight:700; font-size:18px; min-width:180px; text-align:center; transition:opacity 0.25s, transform 0.25s; }
+.cal-title.animating { opacity:0; transform:translateX(20px); }
+.calendar-view-tabs { display:flex; gap:4px; background:var(--bg2); border:1px solid var(--border); border-radius:8px; padding:3px; margin-bottom:16px; }
+.view-tab { padding:5px 14px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; color:var(--text2); background:none; border:none; transition:all 0.3s; }
+.view-tab.active { background:var(--accent); color:white; }
+.calendar-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; margin-bottom:20px; transition:opacity 0.3s, transform 0.3s; }
+.calendar-grid.animating { opacity:0; transform:translateY(10px); }
+.cal-h { text-align:center; font-size:11px; color:var(--text2); padding:8px 0; font-weight:600; }
+.cal-day { aspect-ratio:1; display:flex; flex-direction:column; align-items:center; justify-content:center; font-size:13px; border-radius:8px; cursor:pointer; transition:all 0.25s; border:1px solid transparent; }
+.cal-day:hover { border-color:var(--accent); transform:scale(1.1); background:rgba(99,102,241,0.1); }
+.cal-day.today { border-color:var(--accent); font-weight:700; box-shadow:0 0 0 3px rgba(99,102,241,0.2); }
+.cal-day.win { background:var(--green-bg); color:var(--green); }
+.cal-day.loss { background:var(--red-bg); color:var(--red); }
+.cal-day.be { background:var(--yellow-bg); color:var(--yellow); }
+.cal-day.empty { cursor:default; }
+.cal-day .pnl { font-size:8px; font-weight:700; }
+.cal-day .count { font-size:9px; color:var(--text3); }
+.calendar-table-wrap { overflow-x:auto; margin-bottom:20px; }
+.cal-table { width:100%; border-collapse:collapse; font-size:13px; }
+.cal-table th { padding:10px 12px; text-align:left; color:var(--text2); font-size:11px; border-bottom:2px solid var(--card-border); background:var(--bg2); }
+.cal-table td { padding:10px 12px; border-bottom:1px solid var(--card-border); }
+.cal-table tr:hover td { background:rgba(99,102,241,0.05); }
+.cal-table .today-row td { background:rgba(99,102,241,0.08); }
+.weeks-row { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:10px; margin-top:12px; }
+.week-card { background:var(--card-bg); border:1px solid var(--card-border); border-radius:8px; padding:12px 10px; text-align:center; transition:transform 0.3s; animation:fadeInUp 0.4s backwards; }
+.week-card:hover { transform:translateY(-3px); }
+.week-label { font-size:10px; color:var(--text2); margin-bottom:4px; text-transform:uppercase; }
+.week-val { font-size:16px; font-weight:800; }
+.wv-g { color:var(--green); } .wv-r { color:var(--red); }
+.week-wr { font-size:11px; font-weight:700; color:var(--accent); }
+.form-section { background:var(--card-bg); backdrop-filter:blur(16px); border:1px solid var(--card-border); border-radius:16px; padding:24px; margin-bottom:20px; box-shadow:var(--shadow); animation:fadeIn 0.5s ease backwards; transition:transform 0.3s; position:relative; overflow:hidden; }
+.form-title { font-size:15px; font-weight:700; margin-bottom:16px; display:flex; align-items:center; gap:8px; }
+.form-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:14px; }
+.form-group { display:flex; flex-direction:column; gap:5px; }
+.form-label { font-size:12px; font-weight:600; color:var(--text2); }
+.form-input, .form-select, textarea.form-input { padding:10px 12px; border-radius:8px; border:1px solid var(--border); background:var(--bg2); color:var(--text); font-size:14px; transition:all 0.3s; width:100%; font-family:inherit; }
+.form-input:focus, .form-select:focus, textarea:focus { outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--glow); }
+textarea.form-input { min-height:90px; resize:vertical; }
+.checkbox-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:10px; }
+.check-item { display:flex; align-items:center; gap:12px; cursor:pointer; padding:12px 16px; border-radius:12px; border:2px solid var(--border); transition:all 0.3s; background:var(--bg2); }
+.check-item:hover { border-color:var(--accent); }
+.check-item.checked { background:var(--green-bg); border-color:var(--green); }
+.check-item input[type="checkbox"] { width:20px; height:20px; accent-color:var(--green); cursor:pointer; }
+.check-text { font-size:14px; font-weight:500; }
+.emo-selector { display:flex; flex-wrap:wrap; gap:10px; }
+.emo-opt { padding:9px 14px; border-radius:20px; border:1px solid var(--border); cursor:pointer; transition:all 0.3s; font-size:13px; background:var(--bg2); }
+.emo-opt:hover { border-color:var(--accent); transform:translateY(-2px); }
+.emo-opt.selected { background:rgba(99,102,241,0.15); border-color:var(--accent); color:var(--accent2); }
+.emo-cat { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:1px; margin-top:14px; margin-bottom:8px; }
+.btn { padding:11px 22px; border-radius:12px; font-weight:600; font-size:14px; cursor:pointer; border:none; transition:all 0.35s; display:inline-flex; align-items:center; gap:8px; }
+.btn:active { transform:scale(0.95); }
+.btn-primary { background:var(--accent); color:white; }
+.btn-primary:hover { background:var(--accent2); transform:translateY(-2px); box-shadow:0 12px 24px var(--glow); }
+.btn-danger { background:var(--red); color:white; }
+.btn-danger:hover { box-shadow:0 8px 20px rgba(239,68,68,0.3); }
+.btn-secondary { background:var(--glass); color:var(--text); border:1px solid var(--border); backdrop-filter:blur(10px); }
+.btn-secondary:hover { border-color:var(--accent); transform:translateY(-1px); }
+.btn-sm { padding:8px 14px; font-size:12px; }
+.btn-group { display:flex; gap:10px; margin-top:20px; flex-wrap:wrap; }
+.screenshot-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:14px; }
+.screenshot-panel { border-radius:12px; border:2px dashed var(--border); padding:16px; min-height:140px; display:flex; flex-direction:column; align-items:center; justify-content:center; background:var(--bg2); position:relative; overflow:hidden; transition:all 0.3s; }
+.screenshot-panel.has-media { border-style:solid; border-color:var(--green); background:rgba(16,185,129,0.03); }
+.screenshot-label { position:absolute; top:8px; left:12px; font-size:10px; font-weight:700; text-transform:uppercase; color:var(--accent); }
+.preview-img { max-width:100%; max-height:200px; border-radius:8px; object-fit:contain; }
+.media-remove { position:absolute; top:8px; right:8px; background:var(--red); color:white; border:none; border-radius:50%; width:28px; height:28px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:transform 0.3s; }
+.media-remove:hover { transform:scale(1.15); }
+.history-table-wrap { overflow-x:auto; margin-top:18px; border-radius:16px; border:1px solid var(--card-border); background:var(--card-bg); }
+.hist-table { width:100%; border-collapse:collapse; font-size:13px; min-width:900px; }
+.hist-table thead th { padding:14px 16px; text-align:left; color:var(--text2); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; border-bottom:1px solid var(--card-border); background:rgba(0,0,0,0.15); position:sticky; top:0; user-select:none; }
+.hist-table tbody tr { border-bottom:1px solid var(--card-border); transition:background 0.2s; }
+.hist-table tbody tr:hover { background:rgba(99,102,241,0.04); }
+.hist-table tbody td { padding:12px 16px; vertical-align:middle; }
+.badge { padding:3px 10px; border-radius:10px; font-size:11px; font-weight:700; display:inline-block; }
+.b-win { background:var(--green-bg); color:var(--green); }
+.b-loss { background:var(--red-bg); color:var(--red); }
+.b-be { background:var(--yellow-bg); color:var(--yellow); }
+.tc-tags { display:flex; flex-wrap:wrap; gap:4px; }
+.tc-tag { padding:2px 8px; border-radius:8px; font-size:10px; font-weight:600; background:rgba(99,102,241,0.12); color:var(--accent); }
+.tc-tag.pos { background:var(--green-bg); color:var(--green); }
+.tc-tag.neg { background:var(--red-bg); color:var(--red); }
+.rules-container { margin-top:14px; display:grid; gap:8px; }
+.rule-item { display:flex; justify-content:space-between; align-items:center; padding:13px 16px; background:var(--bg2); border-radius:12px; border:1px solid var(--border); transition:all 0.3s; animation:fadeIn 0.4s ease backwards; }
+.rule-item:hover { border-color:var(--accent); transform:translateX(4px); }
+.rule-text { font-weight:500; font-size:14px; flex:1; }
+.rule-actions { display:flex; gap:8px; }
+.settings-section { background:var(--card-bg); backdrop-filter:blur(16px); border:1px solid var(--card-border); border-radius:16px; padding:20px; margin-bottom:18px; box-shadow:var(--shadow); position:relative; overflow:hidden; }
+.settings-title { font-size:15px; font-weight:700; margin-bottom:14px; display:flex; align-items:center; gap:8px; }
+.setting-item { display:flex; align-items:center; justify-content:space-between; padding:14px; background:var(--bg2); border-radius:12px; border:1px solid var(--border); margin-bottom:8px; transition:all 0.3s; }
+.setting-item:hover { border-color:var(--accent); }
+.toggle { width:46px; height:24px; background:var(--border); border-radius:12px; position:relative; cursor:pointer; transition:background 0.3s; }
+.toggle.active { background:var(--accent); }
+.toggle-dot { width:18px; height:18px; background:white; border-radius:50%; position:absolute; top:3px; left:3px; transition:left 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow:0 1px 3px rgba(0,0,0,0.3); }
+.toggle.active .toggle-dot { left:25px; }
+.modal-overlay { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.65); backdrop-filter:blur(6px); display:none; align-items:center; justify-content:center; z-index:1000; padding:20px; }
+.modal-overlay.active { display:flex; animation:fadeIn 0.2s ease; }
+.modal { background:var(--bg2); border:1px solid var(--card-border); border-radius:16px; padding:28px; max-width:460px; width:100%; max-height:90vh; overflow-y:auto; box-shadow:0 24px 64px rgba(0,0,0,0.6); animation:modalPopIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+@keyframes modalPopIn { from { opacity:0; transform:scale(0.9) translateY(20px); } to { opacity:1; transform:scale(1) translateY(0); } }
+.modal-title { font-size:18px; font-weight:700; margin-bottom:18px; color:var(--accent2); }
+.toast-container { position:fixed; bottom:calc(36px + var(--safe-bottom)); left:50%; transform:translateX(-50%); z-index:9999; display:flex; flex-direction:column; gap:8px; align-items:center; }
+.toast { background:linear-gradient(135deg, var(--accent), var(--accent2)); color:white; padding:12px 24px; border-radius:24px; font-weight:600; font-size:14px; animation:toastIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow:0 10px 30px rgba(99,102,241,0.4); display:flex; align-items:center; gap:8px; }
+@keyframes toastIn { from { opacity:0; transform:translateY(-20px); } to { opacity:1; transform:translateY(0); } }
+.toast.out { animation:fadeOut 0.3s ease forwards; }
+@keyframes fadeOut { to { opacity:0; transform:translateY(-10px); } }
+.fab { position:fixed; bottom:calc(32px + var(--safe-bottom)); right:32px; width:56px; height:56px; border-radius:50%; background:linear-gradient(135deg, var(--accent), var(--accent2)); color:white; font-size:24px; display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:0 8px 24px var(--glow); z-index:90; transition:all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.fab:hover { transform:scale(1.15) rotate(90deg); }
+.filters-bar { display:flex; gap:10px; margin-bottom:16px; flex-wrap:wrap; align-items:center; }
+.filter-input, .filter-select { padding:9px 12px; border-radius:8px; border:1px solid var(--border); background:var(--card-bg); color:var(--text); font-size:13px; transition:all 0.3s; }
+.filter-input:focus, .filter-select:focus { outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--glow); }
+.filter-input { flex:1; min-width:180px; }
+.empty-state { text-align:center; padding:50px 20px; color:var(--text2); animation:fadeIn 0.5s ease; }
+.empty-icon { font-size:44px; margin-bottom:14px; }
+.img-modal { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:2000; display:none; align-items:center; justify-content:center; padding:20px; cursor:pointer; }
+.img-modal.active { display:flex; animation:fadeIn 0.2s; }
+.img-modal img { max-width:95%; max-height:95vh; border-radius:12px; box-shadow:0 24px 64px rgba(0,0,0,0.6); }
+.img-close { position:absolute; top:20px; right:20px; background:rgba(255,255,255,0.1); color:white; border:1px solid rgba(255,255,255,0.2); width:44px; height:44px; border-radius:50%; cursor:pointer; font-size:22px; display:flex; align-items:center; justify-content:center; transition:all 0.3s; }
+.img-close:hover { background:var(--red); border-color:var(--red); transform:rotate(90deg) scale(1.1); }
+.day-modal-overlay { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); backdrop-filter:blur(8px); z-index:1500; display:none; align-items:center; justify-content:center; padding:20px; }
+.day-modal-overlay.active { display:flex; animation:fadeIn 0.25s ease; }
+.day-modal { background:var(--bg2); border:1px solid var(--card-border); border-radius:16px; padding:24px; max-width:700px; width:100%; max-height:80vh; overflow-y:auto; box-shadow:0 32px 80px rgba(0,0,0,0.6); animation:slideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+@keyframes slideUp { from { opacity:0; transform:translateY(40px) scale(0.95); } to { opacity:1; transform:translateY(0) scale(1); } }
+.day-modal-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; padding-bottom:16px; border-bottom:1px solid var(--card-border); }
+.day-modal-close { background:none; border:none; color:var(--text2); font-size:22px; cursor:pointer; padding:4px 8px; border-radius:6px; transition:all 0.3s; }
+.day-modal-close:hover { background:var(--red); color:white; }
+.day-modal-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:18px; }
+.day-stat { background:var(--bg); border:1px solid var(--border); border-radius:8px; padding:12px; text-align:center; }
+.day-stat-label { font-size:10px; color:var(--text2); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:4px; }
+.day-stat-val { font-size:18px; font-weight:800; }
+.day-trades-list { display:grid; gap:10px; }
+.day-trade-item { background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:14px; transition:transform 0.2s; }
+.day-trade-item:hover { transform:translateX(4px); }
+.day-trade-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.day-trade-pair { font-weight:700; font-size:15px; }
+.day-trade-details { display:grid; grid-template-columns:1fr 1fr; gap:4px 12px; font-size:12px; color:var(--text2); }
+.day-trade-tags { display:flex; flex-wrap:wrap; gap:4px; margin-top:8px; }
+.day-trade-screenshots { margin-top:10px; display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.day-screenshot { border-radius:8px; overflow:hidden; background:var(--bg3); min-height:80px; display:flex; align-items:center; justify-content:center; position:relative; cursor:pointer; transition:transform 0.3s; }
+.day-screenshot:hover { transform:scale(1.02); }
+.day-screenshot img { max-width:100%; max-height:150px; object-fit:contain; }
+.day-screenshot-label { position:absolute; top:4px; left:8px; font-size:9px; font-weight:700; text-transform:uppercase; color:white; background:rgba(0,0,0,0.6); padding:2px 8px; border-radius:4px; }
+.file-input { display:none; }
+.tx-type { display:inline-block; padding:3px 10px; border-radius:12px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; }
+.tx-deposit { background:var(--green-bg); color:var(--green); }
+.tx-withdrawal { background:var(--red-bg); color:var(--red); }
+.tx-amt { font-weight:700; font-size:14px; }
+.tx-deposit-amt { color:var(--green); }
+.tx-withdrawal-amt { color:var(--red); }
+.dash-logo-section { margin-bottom:24px; animation:fadeIn 0.6s 0.05s backwards; }
+.dash-logo-wrap { display:flex; align-items:center; gap:16px; padding:18px 22px; background:var(--card-bg); backdrop-filter:blur(16px); border:1px solid var(--card-border); border-radius:16px; box-shadow:var(--shadow); transition:all 0.4s; }
+.dash-logo-wrap:hover { transform:translateY(-2px); }
+.dash-logo-icon { width:48px; height:48px; border-radius:50%; overflow:hidden; box-shadow:0 4px 15px var(--glow); animation:logoPulse 3s ease-in-out infinite alternate; }
+.dash-logo-icon img { width:100%; height:100%; object-fit:cover; }
+.dash-logo-text .dl-title { font-size:22px; font-weight:900; background:linear-gradient(135deg,var(--text),var(--accent2),var(--gold)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-size:200% 200%; animation:gradientShift 4s ease infinite; }
+.dash-logo-text .dl-sub { font-size:10px; color:var(--text2); letter-spacing:2px; text-transform:uppercase; }
+.dash-stats { display:flex; gap:20px; margin-top:8px; }
+.dash-stat .ds-label { font-size:9px; color:var(--text2); text-transform:uppercase; letter-spacing:0.5px; }
+.dash-stat .ds-val { font-size:14px; font-weight:800; color:var(--accent2); }
+.streak-indicator { display:flex; align-items:center; gap:6px; }
+.streak-fire { font-size:18px; animation: firePulse 1s ease-in-out infinite alternate; }
+@keyframes firePulse { from { transform: scale(1); } to { transform: scale(1.2); } }
+.streak-num { font-weight:800; }
+.dashboard-content { transition: opacity 0.2s ease, transform 0.2s ease; }
+.dashboard-content.switching { opacity:0; transform:translateY(5px); }
+.history-content { transition: opacity 0.2s ease, transform 0.2s ease; }
+.history-content.switching { opacity:0; transform:translateY(5px); }
+.export-theme-selector { display:flex; gap:12px; margin:16px 0; }
+.export-theme-opt { flex:1; padding:16px; border-radius:12px; border:2px solid var(--border); cursor:pointer; transition:all 0.3s; text-align:center; }
+.export-theme-opt:hover { border-color:var(--accent); }
+.export-theme-opt.selected { border-color:var(--accent); background:rgba(99,102,241,0.1); }
+.export-theme-icon { font-size:32px; margin-bottom:8px; }
+.export-theme-label { font-size:13px; font-weight:600; }
+.pwa-install-banner { position:fixed; bottom:0; left:0; right:0; background:var(--bg2); border-top:1px solid var(--border); padding:16px 20px; z-index:200; display:none; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; backdrop-filter:blur(20px); box-shadow:0 -8px 32px rgba(0,0,0,0.3); }
+.pwa-install-banner.show { display:flex; animation: slideUpBanner 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+@keyframes slideUpBanner { from { transform:translateY(100%); } to { transform:translateY(0); } }
+.pwa-install-banner .pwa-text { font-size:14px; font-weight:600; color:var(--text); }
+.pwa-install-banner .pwa-btn { padding:8px 20px; border-radius:10px; font-weight:600; font-size:13px; cursor:pointer; border:none; transition:all 0.3s; }
+.pwa-install-btn { background:var(--accent); color:white; }
+.pwa-install-btn:hover { background:var(--accent2); }
+.pwa-dismiss-btn { background:none; color:var(--text2); border:1px solid var(--border) !important; }
+.pwa-dismiss-btn:hover { border-color:var(--accent) !important; color:var(--text); }
+.pwa-status { position:fixed; top:calc(64px + var(--safe-top)); left:50%; transform:translateX(-50%); background:var(--green); color:white; padding:6px 16px; border-radius:20px; font-size:12px; font-weight:600; z-index:160; opacity:0; transition:opacity 0.3s; pointer-events:none; }
+.pwa-status.show { opacity:1; }
+@media (max-width:768px) {
+  .main { padding:72px 12px 16px; padding-bottom:calc(80px + var(--safe-bottom)); }
+  .top-bar-title { font-size:16px; }
+  .cards-grid { grid-template-columns:repeat(2,1fr); gap:10px; }
+  .card { padding:14px; border-radius:14px; }
+  .card-value { font-size:22px; }
+  .card-label { font-size:10px; }
+  .card-sub { font-size:10px; }
+  .card-curve { height:32px; }
+  .form-grid { grid-template-columns:1fr; }
+  .checkbox-grid { grid-template-columns:1fr; }
+  .account-bar { flex-direction:column; align-items:flex-start; }
+  .acc-select-wrap { max-width:100%; }
+  .chart-wrap { height:200px; }
+  .rule-bar-label { width:110px; font-size:12px; }
+  .emo-bar-label { width:110px; font-size:12px; }
+  .dash-stats { gap:14px; flex-wrap:wrap; }
+  .fab { bottom:calc(32px + var(--safe-bottom)); right:20px; width:50px; height:50px; font-size:20px; }
+  .screenshot-grid { grid-template-columns:1fr; }
+  .day-modal { margin:10px; padding:18px; }
+  .day-modal-stats { grid-template-columns:1fr 1fr; }
+  .eq-breakdown { flex-wrap:wrap; gap:10px; }
+  .eq-stat { min-width:calc(50% - 8px); }
+  .day-trade-screenshots { grid-template-columns:1fr; }
+  .page-header { flex-direction:column; gap:10px; }
+  .page-title { font-size:22px; }
+  .filters-bar { flex-direction:column; }
+  .filter-input { min-width:100%; }
+  .hist-table { font-size:12px; }
+  .cal-btn { padding:6px 10px; font-size:12px; }
+  .cal-title { font-size:14px; min-width:auto; }
+  .export-theme-selector { flex-direction:column; }
+  .dash-logo-wrap { padding:14px 16px; gap:12px; }
+  .dash-logo-icon { width:40px; height:40px; }
+  .dash-logo-text .dl-title { font-size:18px; }
+  .rule-adherence-card { padding:16px; }
+  .emo-analytics-card { padding:16px; }
+  .sidebar { width:260px; }
+  .pwa-install-banner { flex-direction:column; text-align:center; padding:14px 16px; }
+}
+@media (min-width:1200px) { .cards-grid { grid-template-columns:repeat(5,1fr); } }
+@media (min-width:1600px) { .main { padding:90px 48px 32px; } .cards-grid { grid-template-columns:repeat(6,1fr); } }
+</style>
+</head>
+<body>
+<div class="bg-fx"><div class="bg-grid"></div><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+<div class="cursor-glow" id="cursor-glow"></div>
+<div class="pwa-status" id="pwa-status">📶 Offline Mode</div>
+<div class="menu-overlay" id="menu-overlay" onclick="closeMenu()"></div>
+<aside class="sidebar" id="sidebar">
+  <button class="close-menu" onclick="closeMenu()">✕</button>
+  <div class="logo-box" onclick="nav('dashboard');closeMenu();">
+    <div class="logo-inner">
+      <div class="logo-icon"><img src="https://i.ibb.co/m5jj1g8m/profile.png" alt="Logo" onerror="this.src='image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NCIgaGVpZ2h0PSI0NCI+PHJlY3Qgd2lkdGg9IjQ0IiBoZWlnaHQ9IjQ0IiBmaWxsPSIjNjM2NmYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZpbGw9IndoaXRlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iOTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+TUM8L3RleHQ+PC9zdmc+'"></div>
+      <div class="logo-info"><div class="lt">Mr.Crazy</div><div class="ls">Trading Journal</div></div>
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="nav-item active" data-p="dashboard" onclick="nav('dashboard');closeMenu();"><span class="ni">📈</span> Dashboard</div>
+    <div class="nav-item" data-p="addTrade" onclick="nav('addTrade');closeMenu();"><span class="ni">➕</span> Add Trade</div>
+    <div class="nav-item" data-p="addRules" onclick="nav('addRules');closeMenu();"><span class="ni">📋</span> Add Rules</div>
+    <div class="nav-item" data-p="history" onclick="nav('history');closeMenu();"><span class="ni">📜</span> History</div>
+    <div class="nav-item" data-p="settings" onclick="nav('settings');closeMenu();"><span class="ni">⚙️</span> Settings</div>
+  </nav>
+</aside>
+<div class="top-bar" id="top-bar">
+  <button class="hamburger" id="hamburger-btn" onclick="toggleMenu()">☰</button>
+  <span class="top-bar-title">Mr.Crazy</span>
+</div>
+<main class="main">
+  <section class="page active" id="p-dashboard">
+    <div class="dash-logo-section">
+      <div class="dash-logo-wrap">
+        <div class="dash-logo-icon"><img src="https://i.ibb.co/m5jj1g8m/profile.png" alt="Logo" onerror="this.src='image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCI+PHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiBmaWxsPSIjNjM2NmYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZpbGw9IndoaXRlIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iOTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+TUM8L3RleHQ+PC9zdmc+'"></div>
+        <div>
+          <div class="dash-logo-text"><div class="dl-title">Mr.Crazy</div><div class="dl-sub">Trading Performance Tracking</div></div>
+          <div class="dash-stats">
+            <div class="dash-stat"><div class="ds-label">Trades</div><div class="ds-val" id="d-trades">0</div></div>
+            <div class="dash-stat"><div class="ds-label">Win Rate</div><div class="ds-val" id="d-wr">0%</div></div>
+            <div class="dash-stat"><div class="ds-label">P&L</div><div class="ds-val" id="d-pnl">$0</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="account-bar" id="account-bar">
+      <span class="acc-label">📌 Account:</span>
+      <div class="acc-select-wrap"><select class="acc-select" id="d-acc"></select><span class="select-arr">▼</span></div>
+    </div>
+    <div class="dashboard-content" id="dashboard-content">
+      <div class="cards-grid" id="metrics"></div>
+      <div class="card" style="animation-delay:0.15s;padding:0;overflow:visible;">
+        <div class="form-title" style="padding:20px 24px 0;">📈 Equity Curve</div>
+        <div class="chart-wrap"><svg class="chart-svg" id="eq-svg"></svg><div class="chart-tip" id="eq-tip"></div></div>
+        <div class="eq-breakdown" id="eq-breakdown"></div>
+      </div>
+      <div class="rule-adherence-card">
+        <div class="card-label">Rule Adherence Detail</div>
+        <div id="rule-bars"></div>
+      </div>
+      <div class="emo-analytics-card">
+        <div class="card-label">Emotion Analytics</div>
+        <div id="emo-bars"></div>
+      </div>
+      <div class="calendar-container">
+        <div class="form-title" style="animation-delay:0.3s; animation-fill-mode:backwards;">📅 Calendar View</div>
+        <div class="calendar-nav">
+          <button class="cal-btn" id="btn-cal-prev"><span>◀</span> Prev</button>
+          <div class="cal-controls">
+            <button class="cal-btn today-btn" id="btn-cal-today">Today</button>
+            <span class="cal-title" id="cal-title"></span>
+          </div>
+          <button class="cal-btn" id="btn-cal-next">Next <span>▶</span></button>
+        </div>
+        <div class="calendar-view-tabs">
+          <button class="view-tab active" data-view="grid">📅 Grid</button>
+          <button class="view-tab" data-view="table">📊 Table</button>
+        </div>
+        <div class="calendar-grid" id="cal-grid"></div>
+        <div class="calendar-table-wrap" id="cal-table-wrap" style="display:none;"></div>
+        <div class="weeks-row" id="weeks"></div>
+      </div>
+    </div>
+  </section>
+  <section class="page" id="p-addTrade">
+    <div class="page-header"><h1 class="page-title">Add Trade</h1><p class="page-sub">Record your trade details, rules, emotions & screenshots</p></div>
+    <form id="trade-f" onsubmit="return false">
+      <div class="form-section" style="animation-delay:0.1s">
+        <div class="form-title">📌 Trade Details</div>
+        <div class="form-grid">
+          <div class="form-group"><label class="form-label">Account</label><select class="form-select" id="t-acc"></select></div>
+          <div class="form-group"><label class="form-label">Date</label><input type="date" class="form-input" id="t-date" required></div>
+          <div class="form-group"><label class="form-label">Pair</label><select class="form-select" id="t-pair" required><option value="">Select pair...</option><option>XAUUSD</option><option>EURUSD</option><option>GBPUSD</option><option>USDJPY</option><option>USDCAD</option><option>AUDUSD</option><option>NZDUSD</option><option>EURGBP</option><option>EURJPY</option><option>GBPJPY</option><option>BTCUSD</option><option>ETHUSD</option><option>NAS100</option><option>US30</option><option>OTHER</option></select></div>
+          <div class="form-group"><label class="form-label">Type</label><select class="form-select" id="t-type"><option>Buy</option><option>Sell</option></select></div>
+          <div class="form-group"><label class="form-label">Result</label><select class="form-select" id="t-res"><option>Win</option><option>Loss</option><option>BE</option></select></div>
+          <div class="form-group"><label class="form-label">P&L ($)</label><input type="number" step="0.01" class="form-input" id="t-pnl" placeholder="0.00" required></div>
+          <div class="form-group"><label class="form-label">Lot Size</label><input type="number" step="0.01" class="form-input" id="t-lot" placeholder="0.01"></div>
+          <div class="form-group"><label class="form-label">Risk:Reward</label><input type="number" step="0.1" class="form-input" id="t-rr" placeholder="1.0"></div>
+        </div>
+      </div>
+      <div class="form-section" style="animation-delay:0.15s">
+        <div class="form-title">✅ Rule Adherence Checklist</div>
+        <div class="checkbox-grid" id="rules-g"></div>
+      </div>
+      <div class="form-section" style="animation-delay:0.2s">
+        <div class="form-title">😊 Emotional Rating</div>
+        <div class="emo-cat" style="color:var(--green)">Positive Emotions</div>
+        <div class="emo-selector" id="pos-emo"></div>
+        <div class="emo-cat" style="color:var(--red)">Negative Emotions</div>
+        <div class="emo-selector" id="neg-emo"></div>
+      </div>
+      <div class="form-section" style="animation-delay:0.25s">
+        <div class="form-title">📸 Trade Screenshots</div>
+        <div class="screenshot-grid">
+          <div>
+            <div class="form-group"><label class="form-label">📍 Before Entry (URL)</label><input type="text" class="form-input" id="img-before-url" placeholder="TradingView chart before..."></div>
+            <div style="text-align:center;color:var(--text2);margin:8px 0;font-size:11px;font-weight:600">— or upload —</div>
+            <button type="button" class="btn btn-secondary" onclick="document.getElementById('img-before-f').click()" style="width:100%;justify-content:center;font-size:12px"><span>📁</span> Upload Before</button>
+            <input type="file" id="img-before-f" class="file-input" accept="image/*" onchange="handleFile(this,'before')">
+            <div class="screenshot-panel" id="preview-before"><div class="screenshot-label">Before</div><div style="color:var(--text2);font-size:13px;margin-top:8px">Screenshot before entry</div></div>
+          </div>
+          <div>
+            <div class="form-group"><label class="form-label">📍 After Exit (URL)</label><input type="text" class="form-input" id="img-after-url" placeholder="TradingView chart after..."></div>
+            <div style="text-align:center;color:var(--text2);margin:8px 0;font-size:11px;font-weight:600">— or upload —</div>
+            <button type="button" class="btn btn-secondary" onclick="document.getElementById('img-after-f').click()" style="width:100%;justify-content:center;font-size:12px"><span>📁</span> Upload After</button>
+            <input type="file" id="img-after-f" class="file-input" accept="image/*" onchange="handleFile(this,'after')">
+            <div class="screenshot-panel" id="preview-after"><div class="screenshot-label">After</div><div style="color:var(--text2);font-size:13px;margin-top:8px">Screenshot after exit</div></div>
+          </div>
+        </div>
+        <div class="form-group" style="margin-top:16px"><label class="form-label">📝 Trade Notes</label><textarea class="form-input" id="t-notes" placeholder="Describe your setup, entry reasoning, lessons learned..."></textarea></div>
+      </div>
+      <div class="btn-group"><button class="btn btn-primary" onclick="saveTrade()">💾 Save Trade</button><button class="btn btn-secondary" onclick="resetForm()">🔄 Clear Form</button></div>
+    </form>
+  </section>
+  <section class="page" id="p-addRules">
+    <div class="page-header"><h1 class="page-title">Add Rules</h1><p class="page-sub">Define and manage your trading checklist rules</p></div>
+    <div class="form-section">
+      <div class="form-title">➕ Create New Rule</div>
+      <div class="form-group"><label class="form-label">Rule Title / Description</label><input type="text" class="form-input" id="rule-input" placeholder="e.g., Wait for candle close confirmation..."></div>
+      <button class="btn btn-primary" style="margin-top:12px" onclick="addRule()">💾 Save Rule</button>
+    </div>
+    <div class="card">
+      <div class="form-title">📋 Your Trading Rules</div>
+      <div class="rules-container" id="rules-list"></div>
+    </div>
+  </section>
+  <section class="page" id="p-history">
+    <div class="page-header" style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px">
+      <div><h1 class="page-title">Trade History</h1><p class="page-sub">Review your trades, rules, emotions & notes</p></div>
+      <button class="btn btn-secondary" onclick="exportImage()">📸 Export Image</button>
+    </div>
+    <div class="account-bar" id="history-account-bar">
+      <span class="acc-label">📌 Account:</span>
+      <div class="acc-select-wrap"><select class="acc-select" id="h-acc"></select><span class="select-arr">▼</span></div>
+    </div>
+    <div class="history-content" id="history-content">
+      <div class="filters-bar">
+        <input type="text" class="filter-input" id="search-t" placeholder="🔍 Search by pair..." oninput="renderHist()">
+        <select class="filter-select" id="f-res" onchange="renderHist()"><option value="all">All Results</option><option>Win</option><option>Loss</option><option>BE</option></select>
+      </div>
+      <div class="history-table-wrap" id="hist-c"></div>
+      <div class="empty-state" id="empty-h" style="display:none"><div class="empty-icon">📭</div><div>No trades yet. Start journaling!</div></div>
+    </div>
+  </section>
+  <section class="page" id="p-settings">
+    <div class="page-header"><h1 class="page-title">Settings</h1><p class="page-sub">Manage accounts, transactions & preferences</p></div>
+    <div class="settings-section">
+      <div class="settings-title">🌙 Appearance</div>
+      <div class="setting-item"><span>Dark Mode</span><div class="toggle active" id="theme-t" onclick="toggleTheme()"><div class="toggle-dot"></div></div></div>
+    </div>
+    <div class="settings-section">
+      <div class="settings-title">💼 Trading Accounts</div>
+      <div id="acc-list"></div>
+      <button class="btn btn-primary btn-sm" style="margin-top:12px" onclick="showAccModal()">➕ Add Account</button>
+    </div>
+    <div class="settings-section">
+      <div class="settings-title">💰 Deposits & Withdrawals</div>
+      <div id="tx-list"></div>
+      <button class="btn btn-primary btn-sm" style="margin-top:12px" onclick="showTxModal()">➕ Add Transaction</button>
+    </div>
+    <div class="settings-section">
+      <div class="settings-title">⚠️ Danger Zone</div>
+      <button class="btn btn-danger btn-sm" onclick="clearAll()">🗑️ Clear All Data</button>
+    </div>
+  </section>
+</main>
+<div class="pwa-install-banner" id="pwa-banner">
+  <span class="pwa-text">📱 Install Mr.Crazy for a better experience</span>
+  <button class="pwa-btn pwa-install-btn" id="pwa-install-btn">Install</button>
+  <button class="pwa-btn pwa-dismiss-btn" onclick="dismissPwaBanner()">Later</button>
+</div>
+<div class="day-modal-overlay" id="day-modal" onclick="closeDayModal(event)">
+  <div class="day-modal" onclick="event.stopPropagation()">
+    <div class="day-modal-header">
+      <div><div class="day-modal-title" id="dm-title"></div><div style="font-size:13px;color:var(--text2);margin-top:4px;" id="dm-subtitle"></div></div>
+      <button class="day-modal-close" onclick="closeDayModal()">✕</button>
+    </div>
+    <div class="day-modal-stats" id="dm-stats"></div>
+    <div class="day-trades-list" id="dm-trades"></div>
+  </div>
+</div>
+<div class="fab" onclick="nav('addTrade')">➕</div>
+<div class="toast-container" id="toasts"></div>
+<div class="img-modal" id="img-m" onclick="closeImgM()"><button class="img-close">×</button><img id="img-m-src" src=""></div>
+<div class="modal-overlay" id="m-acc"><div class="modal"><div class="modal-title" id="m-acc-t">Add Account</div><form id="acc-f" onsubmit="return false"><input type="hidden" id="acc-id"><div class="form-group" style="margin-bottom:14px"><label class="form-label">Account Name</label><input type="text" class="form-input" id="acc-n" required placeholder="My Trading Account"></div><div class="form-group" style="margin-bottom:18px"><label class="form-label">Initial Balance ($)</label><input type="number" step="0.01" class="form-input" id="acc-b" required placeholder="10000"></div><div class="btn-group"><button class="btn btn-primary" onclick="saveAcc()">💾 Save</button><button class="btn btn-secondary" onclick="closeM('m-acc')">Cancel</button></div></form></div></div>
+<div class="modal-overlay" id="m-tx"><div class="modal"><div class="modal-title">Add Transaction</div><form id="tx-f" onsubmit="return false"><div class="form-group" style="margin-bottom:14px"><label class="form-label">Account</label><select class="form-select" id="tx-acc"></select></div><div class="form-group" style="margin-bottom:14px"><label class="form-label">Type</label><select class="form-select" id="tx-type"><option value="deposit">📈 Deposit</option><option value="withdrawal">📉 Withdrawal</option></select></div><div class="form-group" style="margin-bottom:14px"><label class="form-label">Amount ($)</label><input type="number" step="0.01" class="form-input" id="tx-amt" required placeholder="1000"></div><div class="form-group" style="margin-bottom:18px"><label class="form-label">Date</label><input type="date" class="form-input" id="tx-date" required></div><div class="btn-group"><button class="btn btn-primary" onclick="saveTx()">💾 Save</button><button class="btn btn-secondary" onclick="closeM('m-tx')">Cancel</button></div></form></div></div>
+<div class="modal-overlay" id="m-del"><div class="modal"><div class="modal-title">⚠️ Confirm Delete</div><p id="del-msg" style="margin-bottom:18px;color:var(--text2);line-height:1.5"></p><div class="btn-group"><button class="btn btn-danger" id="del-btn">🗑️ Delete</button><button class="btn btn-secondary" onclick="closeM('m-del')">Cancel</button></div></div></div>
+<div class="modal-overlay" id="m-rule"><div class="modal"><div class="modal-title" id="m-rule-t">Edit Rule</div><div class="form-group" style="margin-bottom:18px"><label class="form-label">Rule Description</label><input type="text" class="form-input" id="rule-edit-input" placeholder="Update your rule..."></div><div class="btn-group"><button class="btn btn-primary" id="btn-rule-save">💾 Update</button><button class="btn btn-secondary" onclick="closeM('m-rule')">Cancel</button></div></div></div>
+<div class="modal-overlay" id="m-export"><div class="modal"><div class="modal-title">📸 Export Report</div><div class="form-group" style="margin-bottom:18px"><label class="form-label">Select Account</label><select class="form-select" id="export-acc"></select></div><div class="form-group" style="margin-bottom:12px"><label class="form-label">Export Theme</label><div class="export-theme-selector"><div class="export-theme-opt selected" data-theme="dark" onclick="selectExportTheme('dark')"><div class="export-theme-icon">🌙</div><div class="export-theme-label">Dark Mode</div></div><div class="export-theme-opt" data-theme="light" onclick="selectExportTheme('light')"><div class="export-theme-icon">☀️</div><div class="export-theme-label">Light Mode</div></div></div></div><div class="btn-group"><button class="btn btn-primary" onclick="generateExportImage()">🚀 Generate</button><button class="btn btn-secondary" onclick="closeM('m-export')">Cancel</button></div></div></div>
+<script>
+const S={get:(k,d=null)=>{try{const v=localStorage.getItem('tj_'+k);return v?JSON.parse(v):d}catch(e){return d}},set:(k,v)=>localStorage.setItem('tj_'+k,JSON.stringify(v))};
+let trades=S.get('trades',[]),accs=S.get('accs',[]),txs=S.get('txs',[]),rules=S.get('rules',[]);
+let theme=S.get('theme','dark'),selAcc='all',editTId=null,editAId=null,editRuleId=null,imgBefore=null,imgAfter=null,delCb=null,calView='grid',histAccFilter='all',exportTheme='dark',menuOpen=false;
+const calState = { year: new Date().getFullYear(), month: new Date().getMonth(), animating: false };
+const POS=[{e:'🙂',n:'Calm'},{e:'🎯',n:'Focused'},{e:'🤗',n:'Disciplined'},{e:'🫠',n:'Patient'}];
+const NEG=[{e:'😵‍💫',n:'Revenge'},{e:'🥶',n:'FOMO'},{e:'😰',n:'Fear'},{e:'😤',n:'Overconfident'},{e:'😴',n:'Lazy'},{e:'🤯',n:'Confused'}];
+const RULE_LABELS={'bias':'Bias Followed','entry':'Entry Confirmed','sl':'SL Placed','sizing':'Sizing Correct','risk':'Risk Managed','plan':'Followed Plan'};
+const RULE_KEYS=['bias','entry','sl','sizing','risk','plan'];
+const DAY_NAMES=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
+let accountSwitching = false;
+let deferredPrompt = null;
+let pwaInstalled = false;
+
+function initPWA() {
+  const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  if(isStandalone) { pwaInstalled = true; return; }
+  try {
+    const manifestObj = {
+      name: 'Mr.Crazy - Trading Journal',
+      short_name: 'Mr.Crazy',
+      description: 'Professional Trading Journal - Track trades, emotions, rules & performance',
+      start_url: './',
+      display: 'standalone',
+      display_override: ['standalone', 'minimal-ui'],
+      orientation: 'any',
+      background_color: '#0a0e17',
+      theme_color: '#0a0e17',
+      categories: ['finance', 'productivity'],
+      icons: [
+        { src: 'https://i.ibb.co/m5jj1g8m/profile.png', sizes: '192x192', type: 'image/png', purpose: 'any maskable' },
+        { src: 'https://i.ibb.co/m5jj1g8m/profile.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' }
+      ],
+      screenshots: [
+        { src: 'https://i.ibb.co/m5jj1g8m/profile.png', sizes: '1280x720', type: 'image/png', form_factor: 'wide' }
+      ]
+    };
+    const manifestBlob = new Blob([JSON.stringify(manifestObj)], { type: 'application/json' });
+    const manifestURL = URL.createObjectURL(manifestBlob);
+    const linkEl = document.getElementById('pwa-manifest');
+    linkEl.href = manifestURL;
+
+    const swCode = `
+const CACHE_NAME='mrcrazy-v1';
+const ASSETS=['./','./index.html'];
+self.addEventListener('install',e=>{self.skipWaiting()});
+self.addEventListener('activate',e=>{e.waitUntil(clients.claim())});
+self.addEventListener('fetch',e=>{
+  if(e.request.method!=='GET')return;
+  if(e.request.url.includes('chrome-extension'))return;
+  if(e.request.url.includes('ibb.co')){
+    e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));
+    return;
+  }
+  e.respondWith(
+    caches.match(e.request).then(cached=>{
+      const fetchPromise=fetch(e.request).then(networkRes=>{
+        if(networkRes&&networkRes.status===200){
+          const respClone=networkRes.clone();
+          caches.open(CACHE_NAME).then(c=>c.put(e.request,respClone));
+        }
+        return networkRes;
+      }).catch(()=>null);
+      return cached||fetchPromise;
+    })
+  );
+});
+self.addEventListener('message',e=>{
+  if(e.data&&e.data.type==='SKIP_WAITING')self.skipWaiting();
+  if(e.data&&e.data.type==='CLEAR_CACHE'){
+    caches.delete(CACHE_NAME).then(()=>self.clients.claim());
+  }
+});
+    `;
+    const swBlob = new Blob([swCode], { type: 'application/javascript' });
+    const swURL = URL.createObjectURL(swBlob);
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register(swURL).then(reg => {
+        console.log('SW registered');
+        reg.addEventListener('updatefound', () => {
+          const newSW = reg.installing;
+          newSW.addEventListener('statechange', () => {
+            if (newSW.state === 'installed' && navigator.serviceWorker.controller) {
+              toast('🔄 Update available! Refresh to update.');
+            }
+          });
+        });
+      }).catch(err => console.log('SW registration skipped:', err));
+    }
+  } catch(e) { console.log('PWA init error:', e); }
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    const banner = document.getElementById('pwa-banner');
+    if (banner && !localStorage.getItem('pwa_dismissed')) {
+      banner.classList.add('show');
+    }
+  });
+
+  const installBtn = document.getElementById('pwa-install-btn');
+  if (installBtn) {
+    installBtn.addEventListener('click', async () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        if (outcome === 'accepted') {
+          toast('✅ App installed successfully!');
+        }
+        deferredPrompt = null;
+        document.getElementById('pwa-banner').classList.remove('show');
+      }
+    });
+  }
+
+  window.addEventListener('appinstalled', () => {
+    pwaInstalled = true;
+    toast('🎉 Mr.Crazy installed!');
+    document.getElementById('pwa-banner').classList.remove('show');
+  });
+
+  window.addEventListener('online', () => {
+    const status = document.getElementById('pwa-status');
+    status.textContent = '🌐 Back Online';
+    status.style.background = 'var(--green)';
+    status.classList.add('show');
+    setTimeout(() => status.classList.remove('show'), 2000);
+  });
+  window.addEventListener('offline', () => {
+    const status = document.getElementById('pwa-status');
+    status.textContent = '📶 Offline Mode';
+    status.style.background = 'var(--yellow)';
+    status.classList.add('show');
+    setTimeout(() => status.classList.remove('show'), 3000);
+  });
+}
+
+function dismissPwaBanner() {
+  document.getElementById('pwa-banner').classList.remove('show');
+  localStorage.setItem('pwa_dismissed', '1');
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+  initPWA();
+  initCursorGlow();
+  initCalendarNav();
+  initViewTabs();
+  initRuleModal();
+  if(theme==='light'){document.body.classList.add('light-mode');document.getElementById('theme-t').classList.remove('active')}
+  document.getElementById('t-date').value=today();
+  document.getElementById('tx-date').value=today();
+  populateAllAccounts();
+  renderRulesCheck();
+  renderEmoOpts();
+  renderRulesList();
+  renderDash();
+  renderHist();
+  renderAccs();
+  renderTxs();
+  initEqChart();
+  renderCalendar();
+  setupAccountListeners();
+});
+
+function setupAccountListeners() {
+  const dashAcc = document.getElementById('d-acc');
+  if (dashAcc) { dashAcc.addEventListener('change', function() { switchAccount(this.value); }); }
+  const histAcc = document.getElementById('h-acc');
+  if (histAcc) { histAcc.addEventListener('change', function() { switchHistoryAccount(this.value); }); }
+}
+
+function populateAllAccounts() {
+  const optStr = accs.map(a => `<option value="${a.id}">${a.name}</option>`).join('');
+  const dashAcc = document.getElementById('d-acc');
+  if (dashAcc) { dashAcc.innerHTML = `<option value="all">📌 All Accounts</option>` + optStr; if (selAcc && accs.find(a => a.id === selAcc)) { dashAcc.value = selAcc; } }
+  const histAcc = document.getElementById('h-acc');
+  if (histAcc) { histAcc.innerHTML = `<option value="all">📌 All Accounts</option>` + optStr; if (histAccFilter && accs.find(a => a.id === histAccFilter)) { histAcc.value = histAccFilter; } }
+  const tradeAcc = document.getElementById('t-acc');
+  if (tradeAcc) { tradeAcc.innerHTML = `<option value="all">All Accounts</option>` + optStr; }
+  const txAcc = document.getElementById('tx-acc');
+  if (txAcc) { txAcc.innerHTML = optStr; }
+}
+
+function toggleMenu() {
+  menuOpen = !menuOpen;
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('menu-overlay');
+  const btn = document.getElementById('hamburger-btn');
+  if(menuOpen) { sidebar.classList.add('active'); overlay.classList.add('active'); btn.innerHTML = '✕'; document.body.style.overflow = 'hidden'; } else { closeMenu(); }
+}
+function closeMenu() { menuOpen = false; const sidebar = document.getElementById('sidebar'); const overlay = document.getElementById('menu-overlay'); const btn = document.getElementById('hamburger-btn'); sidebar.classList.remove('active'); overlay.classList.remove('active'); btn.innerHTML = '☰'; document.body.style.overflow = ''; }
+function selectExportTheme(t) { exportTheme = t; document.querySelectorAll('.export-theme-opt').forEach(el => { el.classList.toggle('selected', el.dataset.theme === t); }); }
+function switchAccount(val) { if (accountSwitching || val === selAcc) return; accountSwitching = true; const bar = document.getElementById('account-bar'); const content = document.getElementById('dashboard-content'); bar.classList.add('switching'); content.classList.add('switching'); selAcc = val; requestAnimationFrame(() => { renderDash(); setTimeout(() => { bar.classList.remove('switching'); content.classList.remove('switching'); accountSwitching = false; }, 200); }); }
+function switchHistoryAccount(val) { if (accountSwitching || val === histAccFilter) return; accountSwitching = true; const bar = document.getElementById('history-account-bar'); const content = document.getElementById('history-content'); bar.classList.add('switching'); content.classList.add('switching'); histAccFilter = val; requestAnimationFrame(() => { renderHist(); setTimeout(() => { bar.classList.remove('switching'); content.classList.remove('switching'); accountSwitching = false; }, 200); }); }
+function initCursorGlow(){ const g=document.getElementById('cursor-glow'); if(!g)return; document.addEventListener('mousemove',e=>{g.style.opacity='0.5';g.style.transform=`translate(${e.clientX-175}px,${e.clientY-175}px)`}); document.addEventListener('mouseleave',()=>{if(g)g.style.opacity='0'}); }
+function today(){return new Date().toISOString().split('T')[0]}
+function gid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function getDashboardTrades(){ if (selAcc === 'all') return trades; return trades.filter(t => t.aid === selAcc); }
+function getHistoryTrades() { let d = getDashboardTrades(); if (histAccFilter && histAccFilter !== 'all') { d = trades.filter(t => t.aid === histAccFilter); } return d; }
+function toast(m){const c=document.getElementById('toasts'),t=document.createElement('div');t.className='toast';t.innerHTML=m;c.appendChild(t);setTimeout(()=>{t.classList.add('out');setTimeout(()=>t.remove(),300)},2500)}
+function closeM(id){const el=document.getElementById(id);if(el)el.classList.remove('active')}
+function nav(p){ document.querySelectorAll('.nav-item').forEach(i=>i.classList.remove('active')); document.querySelectorAll(`[data-p="${p}"]`).forEach(i=>i.classList.add('active')); document.querySelectorAll('.page').forEach(pg=>pg.classList.remove('active')); const target=document.getElementById('p-'+p); target.style.animation='none';void target.offsetHeight;target.style.animation=''; target.classList.add('active'); if(p==='dashboard')renderDash(); if(p==='history')renderHist(); }
+function initCalendarNav(){ document.getElementById('btn-cal-prev').addEventListener('click', function() { if(calState.animating) return; calState.month--; if(calState.month < 0) { calState.month = 11; calState.year--; } animateCalRender(); }); document.getElementById('btn-cal-next').addEventListener('click', function() { if(calState.animating) return; calState.month++; if(calState.month > 11) { calState.month = 0; calState.year++; } animateCalRender(); }); document.getElementById('btn-cal-today').addEventListener('click', function() { if(calState.animating) return; calState.year = new Date().getFullYear(); calState.month = new Date().getMonth(); animateCalRender(); }); }
+function initViewTabs(){ document.querySelectorAll('.view-tab').forEach(btn => { btn.addEventListener('click', function() { document.querySelectorAll('.view-tab').forEach(b => b.classList.remove('active')); this.classList.add('active'); calView = this.dataset.view; document.getElementById('cal-grid').style.display = calView === 'grid' ? 'grid' : 'none'; document.getElementById('cal-table-wrap').style.display = calView === 'table' ? 'block' : 'none'; }); }); }
+function initRuleModal() { const saveBtn = document.getElementById('btn-rule-save'); const ruleInput = document.getElementById('rule-edit-input'); if(saveBtn) { saveBtn.addEventListener('click', function(e) { e.preventDefault(); saveEditedRule(); }); } if(ruleInput) { ruleInput.addEventListener('keydown', function(e) { if(e.key === 'Enter') { e.preventDefault(); saveEditedRule(); } }); } }
+function animateCalRender() { calState.animating = true; const titleEl = document.getElementById('cal-title'); const gridEl = document.getElementById('cal-grid'); titleEl.classList.add('animating'); if(calView === 'grid') gridEl.classList.add('animating'); setTimeout(() => { renderCalendar(); titleEl.classList.remove('animating'); if(calView === 'grid') gridEl.classList.remove('animating'); calState.animating = false; }, 250); }
+function renderCalendar(){ const data = getDashboardTrades(); const y = calState.year, m = calState.month; const titleEl = document.getElementById('cal-title'); titleEl.textContent = `${MONTH_NAMES[m]} ${y}`; const todayDate = new Date(), dm = {}; data.forEach(t => { if(!dm[t.date]) dm[t.date] = []; dm[t.date].push(t); }); const fd = new Date(y, m, 1).getDay(), dim = new Date(y, m + 1, 0).getDate(); let h = DAY_NAMES.map(d => `<div class="cal-h">${d}</div>`).join(''); for(let i = 0; i < fd; i++) h += `<div class="cal-day empty"></div>`; for(let d = 1; d <= dim; d++) { const ds = `${y}-${String(m + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`; const isToday = todayDate.getFullYear() === y && todayDate.getMonth() === m && todayDate.getDate() === d; const dt = dm[ds] || []; let cls = 'cal-day'; if(dt.length) { const hasWin = dt.some(t => t.result === 'Win'), hasLoss = dt.some(t => t.result === 'Loss'); if(hasWin && !hasLoss) cls += ' win'; else if(hasLoss && !hasWin) cls += ' loss'; else cls += ' be'; } if(isToday) cls += ' today'; const pnl = dt.reduce((s, t) => s + t.pnl, 0), pc = pnl >= 0 ? 'var(--green)' : 'var(--red)'; h += `<div class="${cls}" ${dt.length ? `onclick="showDayModal('${ds}')"` : ''}><span>${d}</span>${dt.length ? `<span class="pnl" style="color:${pc}">$${pnl >= 0 ? '+' : ''}${pnl.toFixed(0)}</span>` : ''}${dt.length ? `<span class="count">${dt.length}x</span>` : ''}</div>`; } document.getElementById('cal-grid').innerHTML = h; let thtml = '<table class="cal-table"><thead><tr><th>Day</th><th>Date</th><th class="trades-cell">Trades</th><th class="pnl-cell">P&L</th><th class="wr-cell">Win Rate</th><th class="pnl-cell">Best</th><th class="pnl-cell">Worst</th></tr></thead><tbody>'; let hasData = false; for(let d = 1; d <= dim; d++) { const ds = `${y}-${String(m + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`; const dt = dm[ds] || []; const isToday = todayDate.getFullYear() === y && todayDate.getMonth() === m && todayDate.getDate() === d; const pnl = dt.reduce((s, t) => s + t.pnl, 0), pc = pnl >= 0 ? 'var(--green)' : 'var(--red)'; const wins = dt.filter(t => t.result === 'Win').length; const wr = dt.length ? ((wins / dt.length) * 100).toFixed(1) + '%' : '-'; const best = dt.length ? Math.max(...dt.map(t => t.pnl)).toFixed(2) : '-'; const worst = dt.length ? Math.min(...dt.map(t => t.pnl)).toFixed(2) : '-'; const rowCls = isToday ? 'class="today-row"' : ''; if(dt.length) hasData = true; thtml += `<tr ${rowCls} style="cursor:${dt.length ? 'pointer' : 'default'}" ${dt.length ? `onclick="showDayModal('${ds}')"` : ''}><td class="day-name">${DAY_NAMES[new Date(y, m, d).getDay()]}</td><td class="day-num">${d}</td><td class="trades-cell">${dt.length || '-'}</td><td class="pnl-cell" style="color:${dt.length ? pc : ''}">${dt.length ? `${pnl >= 0 ? '+' : ''}$${pnl.toFixed(2)}` : '-'}</td><td class="wr-cell">${wr}</td><td class="pnl-cell" style="color:var(--green)">${best !== '-' ? '$' + best : '-'}</td><td class="pnl-cell" style="color:var(--red)">${worst !== '-' ? '$' + worst : '-'}</td></tr>`; } if(!hasData) thtml += `<tr class="empty-row"><td colspan="7">No trades recorded this month</td></tr>`; thtml += '</tbody></table>'; document.getElementById('cal-table-wrap').innerHTML = thtml; let weeks = [], wk = []; for(let d = 1; d <= dim; d++) { const ds = `${y}-${String(m + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`; wk.push(...data.filter(t => t.date === ds)); if(new Date(y, m, d).getDay() === 6 || d === dim) { const p = wk.reduce((s, t) => s + t.pnl, 0), w = wk.filter(t => t.result === 'Win').length; weeks.push({c: wk.length, pnl: p, wr: wk.length ? w / wk.length * 100 : 0}); wk = []; } } document.getElementById('weeks').innerHTML = weeks.map((w, i) => `<div class="week-card" style="animation-delay:${i * 0.08}s"><div class="week-label">Week ${i + 1}</div><div class="week-val">${w.c} trades</div><div class="week-val ${w.pnl >= 0 ? 'wv-g' : 'wv-r'}">$${w.pnl >= 0 ? '+' : ''}${w.pnl.toFixed(2)}</div><div class="week-wr">${w.wr.toFixed(1)}% WR</div></div>`).join(''); }
+function showDayModal(dateStr) { const data = getDashboardTrades().filter(t => t.date === dateStr); if(!data.length) return; const [yr, mo, da] = dateStr.split('-').map(Number); const pnl = data.reduce((s, t) => s + t.pnl, 0); const wins = data.filter(t => t.result === 'Win').length; const wr = ((wins / data.length) * 100).toFixed(1); const best = Math.max(...data.map(t => t.pnl)), worst = Math.min(...data.map(t => t.pnl)); document.getElementById('dm-title').textContent = `${DAY_NAMES[new Date(yr, mo - 1, da).getDay()]}, ${MONTH_NAMES[mo - 1]} ${da}, ${yr}`; document.getElementById('dm-subtitle').textContent = `${data.length} trade${data.length > 1 ? 's' : ''} • Total P&L: ${pnl >= 0 ? '+' : ''}$${pnl.toFixed(2)}`; document.getElementById('dm-stats').innerHTML = `<div class="day-stat"><div class="day-stat-label">Win Rate</div><div class="day-stat-val" style="color:${wr >= 50 ? 'var(--green)' : 'var(--yellow)'}">${wr}%</div></div><div class="day-stat"><div class="day-stat-label">Best</div><div class="day-stat-val" style="color:var(--green)">+$${best.toFixed(2)}</div></div><div class="day-stat"><div class="day-stat-label">Worst</div><div class="day-stat-val" style="color:var(--red)">$${worst.toFixed(2)}</div></div>`; document.getElementById('dm-trades').innerHTML = data.map((t, i) => { const pc = t.pnl >= 0 ? 'var(--green)' : 'var(--red)'; const rb = t.result === 'Win' ? 'b-win' : t.result === 'Loss' ? 'b-loss' : 'b-be'; const emos = (t.emo || []).map(em => `<span class="tc-tag ${POS.some(p => p.e + ' ' + p.n === em) ? 'pos' : 'neg'}">${em}</span>`).join(''); let screenshotsHtml = ''; if(t.imgBefore || t.imgAfter) { screenshotsHtml = '<div class="day-trade-screenshots">'; if(t.imgBefore) { const escapedSrc = t.imgBefore.replace(/'/g, "\\'").replace(/"/g, '&quot;'); screenshotsHtml += `<div class="day-screenshot" onclick="showImgM('${escapedSrc}')"><span class="day-screenshot-label">Before</span><img src="${t.imgBefore}" alt="Before" loading="lazy"></div>`; } if(t.imgAfter) { const escapedSrc = t.imgAfter.replace(/'/g, "\\'").replace(/"/g, '&quot;'); screenshotsHtml += `<div class="day-screenshot" onclick="showImgM('${escapedSrc}')"><span class="day-screenshot-label">After</span><img src="${t.imgAfter}" alt="After" loading="lazy"></div>`; } screenshotsHtml += '</div>'; } return `<div class="day-trade-item" style="animation-delay:${i * 0.05}s"><div class="day-trade-header"><span class="day-trade-pair">${t.pair} <span class="badge ${rb}">${t.result}</span></span><span class="day-stat-val" style="color:${pc};font-size:16px;">${t.pnl >= 0 ? '+' : ''}$${t.pnl.toFixed(2)}</span></div><div class="day-trade-details"><span>Type: ${t.type}</span><span>Lot: ${t.lot || '-'}</span><span>R:R: ${t.rr ? '1:' + t.rr : '-'}</span><span>Rules: ${t.rules ? t.rules.length : 0}</span></div><div class="day-trade-tags">${emos}</div>${screenshotsHtml}${t.notes ? `<div style="margin-top:8px;padding:8px;background:var(--bg);border-radius:6px;font-size:12px;color:var(--text2);border-left:3px solid var(--accent);">${t.notes.replace(/</g, '&lt;')}</div>` : ''}</div>`; }).join(''); document.getElementById('day-modal').classList.add('active'); }
+function closeDayModal(e) { if(e && e.target !== document.getElementById('day-modal')) return; document.getElementById('day-modal').classList.remove('active'); }
+function closeImgM(){document.getElementById('img-m').classList.remove('active')}
+function showImgM(s){document.getElementById('img-m-src').src=s;document.getElementById('img-m').classList.add('active')}
+function calcStreaks(data) { if (!data.length) return { longestWin: 0, longestLoss: 0, currentWin: 0, currentLoss: 0, currentType: null }; const sorted = [...data].sort((a, b) => new Date(a.date) - new Date(b.date)); let maxWin = 0, maxLoss = 0, currentWinStreak = 0, currentLossStreak = 0; for (const t of sorted) { if (t.result === 'Win') { currentWinStreak++; currentLossStreak = 0; if (currentWinStreak > maxWin) maxWin = currentWinStreak; } else if (t.result === 'Loss') { currentLossStreak++; currentWinStreak = 0; if (currentLossStreak > maxLoss) maxLoss = currentLossStreak; } else { currentWinStreak = 0; currentLossStreak = 0; } } let currentStreak = 0, currentType = null; for (let i = sorted.length - 1; i >= 0; i--) { if (sorted[i].result === 'Win') { if (currentType === 'Win') currentStreak++; else if (currentType === null) { currentType = 'Win'; currentStreak = 1; } else break; } else if (sorted[i].result === 'Loss') { if (currentType === 'Loss') currentStreak++; else if (currentType === null) { currentType = 'Loss'; currentStreak = 1; } else break; } else break; } return { longestWin: maxWin, longestLoss: maxLoss, currentWin: currentType === 'Win' ? currentStreak : 0, currentLoss: currentType === 'Loss' ? currentStreak : 0, currentType }; }
+function createSparklineSVG(pts, color, w=200, h=40) { if (!pts || pts.length < 2) return ''; const maxV = Math.max(...pts), minV = Math.min(...pts); const range = maxV - minV || 1; const stepX = (w - 4) / (pts.length - 1); let pathD = '', areaD = ''; pts.forEach((v, i) => { const x = 2 + i * stepX; const y = h - 4 - ((v - minV) / range) * (h - 8); if (i === 0) { pathD += `M${x},${y}`; areaD += `M${x},${h-2} L${x},${y}`; } else { pathD += ` L${x},${y}`; areaD += ` L${x},${y}`; } }); areaD += ` L${2 + (pts.length-1)*stepX},${h-2} Z`; const uid = 'sg_' + Math.random().toString(36).slice(2,7); return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"><defs><linearGradient id="${uid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="${color}" stop-opacity="0.3"/><stop offset="100%" stop-color="${color}" stop-opacity="0"/></linearGradient></defs><path d="${areaD}" fill="url(#${uid})"/><path d="${pathD}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`; }
+function addRule(){ const i = document.getElementById('rule-input'); const txt = i.value.trim(); if(!txt) return toast('❌ Enter a rule description'); rules.push({id:gid(), title:txt}); S.set('rules', rules); i.value = ''; renderRulesCheck(); renderRulesList(); toast('✅ Rule added!'); }
+function delRule(id){ rules = rules.filter(r => r.id !== id); S.set('rules', rules); renderRulesCheck(); renderRulesList(); renderDash(); toast('✅ Rule deleted!'); }
+function editRule(id){ const r = rules.find(x => x.id === id); if(!r) return; editRuleId = id; const input = document.getElementById('rule-edit-input'); if(input) input.value = r.title; const modal = document.getElementById('m-rule'); if(modal) modal.classList.add('active'); setTimeout(() => { if(input) input.focus(); }, 100); }
+function saveEditedRule(){ if(!editRuleId) return toast('❌ No rule selected'); const input = document.getElementById('rule-edit-input'); const newTitle = input ? input.value.trim() : ''; if(!newTitle) return toast('❌ Enter a rule description'); const idx = rules.findIndex(r => r.id === editRuleId); if(idx > -1){ rules[idx].title = newTitle; S.set('rules', rules); closeM('m-rule'); renderRulesCheck(); renderRulesList(); renderDash(); toast('✅ Rule updated!'); } editRuleId = null; }
+function renderRulesList(){ const c = document.getElementById('rules-list'); if(!rules.length){ c.innerHTML = '<div style="text-align:center;color:var(--text2);padding:30px"><div style="font-size:40px;margin-bottom:12px">📝</div><div>No rules added yet.</div></div>'; return; } c.innerHTML = rules.map((r, i) => `<div class="rule-item" style="animation-delay:${i*0.05}s"><div class="rule-text">✅ ${r.title}</div><div class="rule-actions"><button class="action-btn edit-rule-btn" data-id="${r.id}" title="Edit rule">✏️</button><button class="action-btn del-rule-btn" data-id="${r.id}" title="Delete rule">🗑️</button></div></div>`).join(''); c.querySelectorAll('.edit-rule-btn').forEach(btn => { btn.addEventListener('click', function(e) { e.stopPropagation(); editRule(this.getAttribute('data-id')); }); }); c.querySelectorAll('.del-rule-btn').forEach(btn => { btn.addEventListener('click', function(e) { e.stopPropagation(); delRule(this.getAttribute('data-id')); }); }); }
+function renderRulesCheck(){ const g = document.getElementById('rules-g'); let html = ''; RULE_KEYS.forEach((key, i) => { html += `<label class="check-item" style="animation-delay:${i*0.05}s"><input type="checkbox" value="${key}"><span class="check-text">${RULE_LABELS[key]}</span></label>`; }); rules.forEach((r, i) => { html += `<label class="check-item" style="animation-delay:${(RULE_KEYS.length+i)*0.05}s"><input type="checkbox" value="custom-${r.id}"><span class="check-text">${r.title}</span></label>`; }); g.innerHTML = html; g.querySelectorAll('.check-item').forEach(el => { el.addEventListener('click', e => { if(e.target.tagName !== 'INPUT'){ const cb = el.querySelector('input'); cb.checked = !cb.checked; } el.classList.toggle('checked', el.querySelector('input').checked); }); }); }
+function renderEmoOpts(){ document.getElementById('pos-emo').innerHTML = POS.map(e => `<div class="emo-opt" data-emo="${e.e} ${e.n}">${e.e} ${e.n}</div>`).join(''); document.getElementById('neg-emo').innerHTML = NEG.map(e => `<div class="emo-opt" data-emo="${e.e} ${e.n}">${e.e} ${e.n}</div>`).join(''); document.querySelectorAll('.emo-opt').forEach(el => el.addEventListener('click', () => el.classList.toggle('selected'))); }
+function getEmo(){return Array.from(document.querySelectorAll('.emo-opt.selected')).map(e=>e.dataset.emo)}
+function setEmo(emo){document.querySelectorAll('.emo-opt').forEach(el=>el.classList.toggle('selected',emo&&emo.includes(el.dataset.emo)))}
+function getRules(){return Array.from(document.querySelectorAll('#rules-g input:checked')).map(c=>c.value)}
+function setRulesCh(r){document.querySelectorAll('#rules-g input').forEach(cb=>{const el=cb.closest('.check-item');cb.checked=r.includes(cb.value);el.classList.toggle('checked',cb.checked)})}
+function handleFile(inp,type){if(!inp.files||!inp.files[0])return;const f=inp.files[0];if(f.size>500000)return toast('❌ Image too large (max 500KB)');const r=new FileReader();r.onload=ev=>{if(type==='before'){imgBefore=ev.target.result;updatePreview('before');toast('📸 Before loaded')}else{imgAfter=ev.target.result;updatePreview('after');toast('📸 After loaded')}};r.readAsDataURL(f)}
+document.getElementById('img-before-url').addEventListener('input',e=>{if(e.target.value.trim().startsWith('http')){imgBefore=e.target.value.trim();updatePreview('before')}});
+document.getElementById('img-after-url').addEventListener('input',e=>{if(e.target.value.trim().startsWith('http')){imgAfter=e.target.value.trim();updatePreview('after')}});
+function updatePreview(type){const img=type==='before'?imgBefore:imgAfter;const p=document.getElementById('preview-'+type);const label=type==='before'?'Before Entry':'After Exit';p.classList.toggle('has-media',!!img);if(img){p.innerHTML=`<div class="screenshot-label">${label}</div><img src="${img}" class="preview-img"><button class="media-remove" onclick="rmImg('${type}')" type="button">×</button>`}else{p.innerHTML=`<div class="screenshot-label">${label}</div><div style="color:var(--text2);font-size:13px;margin-top:8px">${type==='before'?'Screenshot before entry':'Screenshot after exit'}</div>`}}
+function rmImg(type){if(type==='before'){imgBefore=null;document.getElementById('img-before-f').value='';document.getElementById('img-before-url').value=''}else{imgAfter=null;document.getElementById('img-after-f').value='';document.getElementById('img-after-url').value=''}updatePreview(type)}
+function saveTrade(){const pair=document.getElementById('t-pair').value,pnl=document.getElementById('t-pnl').value;if(!pair||!pnl)return toast('❌ Fill required fields');const t={id:editTId||gid(),aid:document.getElementById('t-acc').value,date:document.getElementById('t-date').value,pair,type:document.getElementById('t-type').value,result:document.getElementById('t-res').value,pnl:parseFloat(pnl)||0,lot:parseFloat(document.getElementById('t-lot').value)||0,rr:parseFloat(document.getElementById('t-rr').value)||0,rules:getRules(),emo:getEmo(),imgBefore:imgBefore,imgAfter:imgAfter,notes:document.getElementById('t-notes').value};if(editTId){const i=trades.findIndex(x=>x.id===editTId);trades[i]=t}else trades.push(t);S.set('trades',trades);resetForm();toast(editTId?'✅ Trade updated':'✅ Trade saved! 🎉');nav('dashboard')}
+function resetForm(){editTId=null;document.getElementById('t-date').value=today();['t-pnl','t-lot','t-rr','t-notes','img-before-url','img-after-url'].forEach(id=>document.getElementById(id).value='');imgBefore=null;imgAfter=null;updatePreview('before');updatePreview('after');setRulesCh([]);setEmo([])}
+function renderDash(){const data=getDashboardTrades();renderMetrics(data);renderRuleBars(data);renderEmoBars(data);renderEqChart(data);renderCalendar()}
+function renderMetrics(data){const c=document.getElementById('metrics'),dt=document.getElementById('d-trades'),dw=document.getElementById('d-wr'),dp=document.getElementById('d-pnl'); if(!data.length){c.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:30px;color:var(--text2)"><div style="font-size:40px;margin-bottom:12px">📊</div><div>Add trades to see metrics</div></div>';dt.textContent='0';dw.textContent='0%';dp.textContent='$0';dp.style.color='';return} const sorted=[...data].sort((a,b)=>new Date(a.date)-new Date(b.date)); let cumPnl=0; const cumulativePnlPoints=sorted.map(t=>{cumPnl+=t.pnl;return cumPnl}); const w=data.filter(t=>t.result==='Win').length;const wr=(w/data.length*100).toFixed(1)+'%';const gp=data.filter(t=>t.pnl>0).reduce((s,t)=>s+t.pnl,0);const gl=Math.abs(data.filter(t=>t.pnl<0).reduce((s,t)=>s+t.pnl,0));const pf=gl===0?gp.toFixed(2):(gp/gl).toFixed(2);const best=Math.max(...data.map(t=>t.pnl));const worst=Math.min(...data.map(t=>t.pnl));const wrr=data.filter(t=>t.rr>0);const avr=wrr.length?(wrr.reduce((s,t)=>s+t.rr,0)/wrr.length).toFixed(2):'0';const tp=data.reduce((s,t)=>s+t.pnl,0); dt.textContent=data.length;dw.textContent=wr;dp.textContent='$'+tp.toFixed(0);dp.style.color=tp>=0?'var(--green)':'var(--red)'; const streaks = calcStreaks(data); const winRateOverTime = sorted.map((t,i) => { const wins = sorted.slice(0,i+1).filter(x=>x.result==='Win').length; return wins/(i+1)*100; }); const bestOverTime = sorted.map((t,i)=>Math.max(...sorted.slice(0,i+1).map(x=>x.pnl))); const worstOverTime = sorted.map((t,i)=>Math.min(...sorted.slice(0,i+1).map(x=>x.pnl))); c.innerHTML=`<div class="card" style="animation-delay:0.05s"><div class="card-label">Win Rate</div><div class="card-value">${wr}</div><div class="card-sub">🎯 ${w} wins out of ${data.length}</div><div class="card-curve">${createSparklineSVG(winRateOverTime, 'var(--green)')}</div></div><div class="card" style="animation-delay:0.1s"><div class="card-label">Profit Factor</div><div class="card-value">${pf}</div><div class="card-sub">📊 Gross P/L ratio</div><div class="card-curve">${createSparklineSVG(cumulativePnlPoints.length > 1 ? cumulativePnlPoints.map((v,i)=>i===0?0:v-cumulativePnlPoints[i-1]) : cumulativePnlPoints, 'var(--accent2)')}</div></div><div class="card" style="animation-delay:0.15s"><div class="card-label">Total P&L</div><div class="card-value ${tp>=0?'cv-green':'cv-red'}">$${tp.toFixed(2)}</div><div class="card-sub">${tp>=0?'📈':'📉'} Net performance</div><div class="card-curve">${createSparklineSVG(cumulativePnlPoints, tp>=0?'var(--green)':'var(--red)')}</div></div><div class="card" style="animation-delay:0.2s"><div class="card-label">Best Trade</div><div class="card-value cv-green">$${best.toFixed(2)}</div><div class="card-sub">🏆 Top performer</div><div class="card-curve">${createSparklineSVG(bestOverTime, 'var(--green)')}</div></div><div class="card" style="animation-delay:0.25s"><div class="card-label">Worst Trade</div><div class="card-value cv-red">$${worst.toFixed(2)}</div><div class="card-sub">⚠️ Biggest loss</div><div class="card-curve">${createSparklineSVG(worstOverTime, 'var(--red)')}</div></div><div class="card" style="animation-delay:0.3s"><div class="card-label">Avg R:R</div><div class="card-value">${avr}</div><div class="card-sub">📐 Risk to Reward</div><div class="card-curve">${createSparklineSVG(sorted.map(t=>t.rr||0), 'var(--yellow)')}</div></div><div class="card" style="animation-delay:0.35s"><div class="card-label">Longest Win Streak</div><div class="card-value"><span class="streak-indicator"><span class="streak-fire">🔥</span><span class="streak-num cv-green">${streaks.longestWin}</span></span></div><div class="card-sub">📈 Consecutive wins</div></div><div class="card" style="animation-delay:0.4s"><div class="card-label">Longest Loss Streak</div><div class="card-value"><span class="streak-indicator"><span class="streak-num cv-red">${streaks.longestLoss}</span><span class="streak-fire">📉</span></span></div><div class="card-sub">⚡ Consecutive losses</div></div><div class="card" style="animation-delay:0.45s"><div class="card-label">Current Streak</div><div class="card-value"><span class="streak-indicator">${streaks.currentWin > 0 ? '<span class="streak-fire">🔥</span>' : ''}<span class="streak-num" style="color:${streaks.currentWin > 0 ? 'var(--green)' : streaks.currentLoss > 0 ? 'var(--red)' : 'var(--text2)'}">${streaks.currentWin > 0 ? streaks.currentWin + 'W' : streaks.currentLoss > 0 ? streaks.currentLoss + 'L' : '-'}</span>${streaks.currentLoss > 0 ? '<span class="streak-fire">📉</span>' : ''}</span></div><div class="card-sub">${streaks.currentWin > 0 ? '🎯 On a winning streak!' : streaks.currentLoss > 0 ? '⚠️ Be careful!' : '🔄 Start trading'}</div></div>`; }
+function renderRuleBars(data){const container=document.getElementById('rule-bars');container.innerHTML='';if(!data.length){container.innerHTML='<div style="color:var(--text2);font-size:13px;padding:8px 0">No trades yet</div>';return}let totalChecks=0,totalPassed=0; RULE_KEYS.forEach(key=>{const total=data.length;const passed=data.filter(t=>t.rules&&t.rules.includes(key)).length;totalChecks+=total;totalPassed+=passed;const pct=total?Math.round(passed/total*100):0;const div=document.createElement('div');div.className='rule-bar-row';div.innerHTML=`<div class="rule-bar-label">${RULE_LABELS[key]}</div><div class="rule-bar-track"><div class="rule-bar-fill" style="width:0%" data-w="${pct}%"></div></div><div class="rule-bar-pct">${pct}%</div>`;container.appendChild(div)}); rules.forEach(r=>{const total=data.length;const passed=data.filter(t=>t.rules&&t.rules.includes('custom-'+r.id)).length;totalChecks+=total;totalPassed+=passed;const pct=total?Math.round(passed/total*100):0;const div=document.createElement('div');div.className='rule-bar-row';div.innerHTML=`<div class="rule-bar-label">${r.title}</div><div class="rule-bar-track"><div class="rule-bar-fill" style="width:0%" data-w="${pct}%"></div></div><div class="rule-bar-pct">${pct}%</div>`;container.appendChild(div)}); const overallPct=totalChecks>0?Math.round(totalPassed/totalChecks*100):0;const card=document.createElement('div');card.style.cssText='display:flex;align-items:center;justify-content:space-between;padding:16px 20px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);border-radius:12px;margin-bottom:20px;';card.innerHTML=`<div style="display:flex;align-items:center;gap:10px"><span style="font-size:24px">📋</span><div><div style="font-size:14px;font-weight:700;color:var(--text)">Rule Adherence Level</div><div style="font-size:12px;color:var(--text2);margin-top:2px">Overall compliance across all rules</div></div></div><div style="font-size:28px;font-weight:800;color:${overallPct>=70?'var(--green)':overallPct>=40?'var(--yellow)':'var(--red)'}">${overallPct}%</div>`;container.insertBefore(card,container.firstChild);setTimeout(()=>container.querySelectorAll('.rule-bar-fill').forEach(b=>b.style.width=b.dataset.w),300)}
+function renderEmoBars(data){const container=document.getElementById('emo-bars');container.innerHTML='';if(!data.length){container.innerHTML='<div style="color:var(--text2);font-size:13px;padding:8px 0">No trades yet</div>';return}const allEmo=[...POS,...NEG];const counts={};allEmo.forEach(e=>counts[e.e+' '+e.n]=0);data.forEach(t=>(t.emo||[]).forEach(e=>{if(counts[e]!==undefined)counts[e]++}));const maxCount=Math.max(...Object.values(counts),1);const sorted=Object.entries(counts).sort((a,b)=>b[1]-a[1]);sorted.forEach(([emo,count])=>{const pct=(count/maxCount*100);const isPos=POS.some(p=>p.e+' '+p.n===emo);const div=document.createElement('div');div.className='emo-bar-row';div.innerHTML=`<div class="emo-bar-label">${emo}</div><div class="emo-bar-track"><div class="emo-bar-fill ${isPos?'pos':'neg'}" style="width:0%" data-w="${pct}%"></div></div><div class="emo-bar-count">${count}x</div>`;container.appendChild(div)});setTimeout(()=>container.querySelectorAll('.emo-bar-fill').forEach(b=>b.style.width=b.dataset.w),300)}
+let eqPts=[];
+function initEqChart(){const s=document.getElementById('eq-svg');s.addEventListener('mousemove',e=>{const r=s.getBoundingClientRect(),x=e.clientX-r.left;const dots=s.querySelectorAll('.cdot');let best=null,bd=Infinity;dots.forEach(d=>{const dist=Math.abs(parseFloat(d.getAttribute('cx'))-x);if(dist<bd){bd=dist;best=d}});if(best&&bd<25){const idx=parseInt(best.getAttribute('data-i'));const pt=eqPts[idx];if(!pt)return;const tt=document.getElementById('eq-tip');tt.innerHTML=`<div style="font-weight:700;color:var(--text);margin-bottom:2px">${pt.date}</div><div>P&L: <span style="color:${pt.pnl>=0?'var(--green)':'var(--red)'}">$${pt.pnl.toFixed(2)}</span></div><div>Cum: <span style="color:${pt.cum>=0?'var(--green)':'var(--red)'};font-weight:700">$${pt.cum.toFixed(2)}</span></div>`;tt.style.left=Math.min(x+15,r.width-150)+'px';tt.style.top='5px';tt.classList.add('show');best.setAttribute('r','6')}else dots.forEach(d=>d.setAttribute('r','4'))});s.addEventListener('mouseleave',()=>document.getElementById('eq-tip').classList.remove('show'))}
+function renderEqChart(data){ const s=document.getElementById('eq-svg'); const bd=document.getElementById('eq-breakdown'); if(!data.length){ s.innerHTML='<text x="50%" y="50%" fill="var(--text2)" font-size="14" text-anchor="middle" font-family="inherit">Add trades to see your equity curve 📈</text>'; bd.innerHTML=''; return; } const wins=data.filter(t=>t.result==='Win').length; const losses=data.filter(t=>t.result==='Loss').length; const be=data.filter(t=>t.result==='BE').length; bd.innerHTML=`<div class="eq-stat"><div class="eq-stat-icon win">🟢</div><div class="eq-stat-info"><div class="es-label">Wins</div><div class="es-val" style="color:var(--green)">${wins}</div></div></div><div class="eq-stat"><div class="eq-stat-icon loss">🔴</div><div class="eq-stat-info"><div class="es-label">Losses</div><div class="es-val" style="color:var(--red)">${losses}</div></div></div><div class="eq-stat"><div class="eq-stat-icon be">🟡</div><div class="eq-stat-info"><div class="es-label">Break Even</div><div class="es-val" style="color:var(--yellow)">${be}</div></div></div><div class="eq-stat"><div class="eq-stat-icon" style="background:rgba(99,102,241,0.12)">📊</div><div class="eq-stat-info"><div class="es-label">Win Rate</div><div class="es-val" style="color:var(--accent2)">${(wins/data.length*100).toFixed(1)}%</div></div></div>`; const sorted=[...data].sort((a,b)=>new Date(a.date)-new Date(b.date)); let cum=0; eqPts=sorted.map(t=>{cum+=t.pnl;return{date:t.date,pnl:t.pnl,cum}}); const mx=Math.max(...eqPts.map(p=>p.cum)),mn=Math.min(...eqPts.map(p=>p.cum)),rng=mx-mn||1; const w=s.parentElement.clientWidth,h=s.parentElement.clientHeight,p={t:30,r:20,b:30,l:55},cw=w-p.l-p.r,ch=h-p.t-p.b; const xs=eqPts.length>1?cw/(eqPts.length-1):cw/2; const yS=v=>p.t+ch-((v-mn)/rng*ch); let lp='',ap='',dots=''; eqPts.forEach((pt,i)=>{ const x=p.l+(eqPts.length===1?cw/2:i*xs),y=yS(pt.cum); if(i===0){lp+=`M${x},${y}`;ap+=`M${x},${p.t+ch}L${x},${y}`}else{lp+=` L${x},${y}`;ap+=` L${x},${y}`} dots+=`<circle class="cdot" cx="${x}" cy="${y}" r="4" fill="${pt.cum>=0?'var(--green)':'var(--red)'}" data-i="${i}"/>` }); const lx=p.l+(eqPts.length===1?cw/2:(eqPts.length-1)*xs); ap+=` L${lx},${p.t+ch} Z`; const col=eqPts[eqPts.length-1].cum>=0?'var(--green)':'var(--red)'; let grid=''; for(let i=0;i<=5;i++){const v=mn+(rng/5)*i,y=yS(v);grid+=`<line x1="${p.l}" y1="${y}" x2="${w-p.r}" y2="${y}" stroke="var(--border)" stroke-width="0.5"/><text x="${p.l-8}" y="${y+4}" fill="var(--text2)" font-size="10" text-anchor="end" font-family="inherit">$${Math.round(v)}</text>`} s.innerHTML=`<defs><linearGradient id="eg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="${col}" stop-opacity="0.3"/><stop offset="100%" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>${grid}<path d="${ap}" fill="url(#eg)"/><path d="${lp}" fill="none" stroke="${col}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>${dots}`; }
+function renderHist(){ const searchTxt = document.getElementById('search-t').value.toLowerCase(); const resFilter = document.getElementById('f-res').value; let d = getHistoryTrades(); if(searchTxt) d = d.filter(t=>t.pair.toLowerCase().includes(searchTxt)); if(resFilter!=='all') d = d.filter(t=>t.result===resFilter); d.sort((a,b)=>new Date(b.date)-new Date(a.date)); const c=document.getElementById('hist-c'),e=document.getElementById('empty-h'); if(!d.length){c.innerHTML='';e.style.display='block';return} e.style.display='none'; let html = `<table class="hist-table"><thead><tr><th>#</th><th>Date</th><th>Pair</th><th>Type</th><th>Lot</th><th>R:R</th><th>P&L</th><th>Rules</th><th>Emotions</th><th>Actions</th></tr></thead><tbody>`; d.forEach((t,i)=>{ const a=accs.find(x=>x.id===t.aid); const rb=t.result==='Win'?'b-win':t.result==='Loss'?'b-loss':'b-be'; const pc=t.pnl>=0?'var(--green)':'var(--red)'; const et=(t.emo||[]).map(em=>{ const isP=POS.some(x=>x.e+' '+x.n===em); return `<span class="tc-tag ${isP?'pos':'neg'}">${em}</span>`; }).join(''); const rulesCount = t.rules ? t.rules.length : 0; const rulesTotal = rules.length + RULE_KEYS.length; html += `<tr><td style="color:var(--text3);font-weight:600">${i+1}</td><td style="white-space:nowrap">${t.date}</td><td style="font-weight:700;color:var(--text)">${t.pair} <span class="badge ${rb}">${t.result}</span></td><td style="color:var(--accent2)">${t.type}</td><td>${t.lot||'-'}</td><td>${t.rr?'1:'+t.rr:'-'}</td><td style="font-weight:700;color:${pc}">${t.pnl>=0?'+':''}$${t.pnl.toFixed(2)}</td><td style="font-size:12px;color:var(--text2)">${rulesCount}/${rulesTotal}</td><td><div class="tc-tags">${et}</div></td><td style="display:flex;gap:4px;white-space:nowrap"><button class="btn btn-secondary btn-sm" onclick="editTrade('${t.id}')" style="padding:6px 10px;font-size:11px">✏️ Edit</button><button class="btn btn-danger btn-sm" onclick="delTrade('${t.id}')" style="padding:6px 10px;font-size:11px">🗑️</button></td></tr>`; if(t.notes) { html += `<tr style="background:rgba(0,0,0,0.08)"><td colspan="10" style="padding:8px 16px 8px 32px"><div style="font-size:11px;color:var(--text2);margin-bottom:4px;font-weight:600">📝 Notes</div><div style="font-size:12px;color:var(--text3);white-space:pre-wrap">${t.notes.replace(/</g,'&lt;')}</div></td></tr>`; } }); html += '</tbody></table>'; c.innerHTML = html; }
+function editTrade(id){const t=trades.find(x=>x.id===id);if(!t)return;editTId=id;document.getElementById('t-acc').value=t.aid||'all';document.getElementById('t-date').value=t.date;document.getElementById('t-pair').value=t.pair;document.getElementById('t-type').value=t.type;document.getElementById('t-res').value=t.result;document.getElementById('t-pnl').value=t.pnl;document.getElementById('t-lot').value=t.lot||'';document.getElementById('t-rr').value=t.rr||'';document.getElementById('t-notes').value=t.notes||'';imgBefore=t.imgBefore||null;imgAfter=t.imgAfter||null;updatePreview('before');updatePreview('after');setRulesCh(t.rules||[]);setEmo(t.emo||[]);nav('addTrade')}
+function delTrade(id){document.getElementById('del-msg').textContent='Are you sure?';delCb=()=>{trades=trades.filter(t=>t.id!==id);S.set('trades',trades);closeM('m-del');renderHist();renderDash();toast('✅ Trade deleted')};document.getElementById('del-btn').onclick=delCb;document.getElementById('m-del').classList.add('active')}
+function getAccBal(id){ let a=accs.find(x=>x.id===id); if(!a) return 0; let b = a.bal; b += trades.filter(t=>t.aid===id).reduce((s,t)=>s+t.pnl,0); return b; }
+function renderAccs(){const c=document.getElementById('acc-list');if(!accs.length){c.innerHTML='<div style="color:var(--text2);padding:16px;text-align:center">No accounts yet. Add one to get started!</div>';return}c.innerHTML=accs.map(a=>{const bal=getAccBal(a.id);return`<div class="setting-item"><div><strong style="font-size:14px">${a.name}</strong><div style="font-size:13px;color:var(--text2);margin-top:2px">$${bal.toFixed(2)}</div></div><div style="display:flex;gap:6px"><button class="action-btn" onclick="editAcc('${a.id}')">✏️</button><button class="action-btn" onclick="delAcc('${a.id}')">🗑️</button></div></div>`}).join('')}
+function showAccModal(){editAId=null;document.getElementById('m-acc-t').textContent='Add New Account';document.getElementById('acc-id').value='';document.getElementById('acc-n').value='';document.getElementById('acc-b').value='';document.getElementById('m-acc').classList.add('active');populateAllAccounts()}
+function editAcc(id){const a=accs.find(x=>x.id===id);if(!a)return;editAId=id;document.getElementById('m-acc-t').textContent='Edit Account';document.getElementById('acc-id').value=a.id;document.getElementById('acc-n').value=a.name;document.getElementById('acc-b').value=a.bal;document.getElementById('m-acc').classList.add('active')}
+function delAcc(id){document.getElementById('del-msg').textContent='Are you sure? This cannot be undone.';delCb=()=>{accs=accs.filter(a=>a.id!==id);S.set('accs',accs);closeM('m-del');populateAllAccounts();renderAccs();renderDash();renderHist();toast('✅ Account deleted')};document.getElementById('del-btn').onclick=delCb;document.getElementById('m-del').classList.add('active')}
+function saveAcc(){const n=document.getElementById('acc-n').value.trim(),b=parseFloat(document.getElementById('acc-b').value)||0;if(!n)return toast('❌ Enter account name');const d={id:editAId||gid(),name:n,bal:b};if(editAId){const i=accs.findIndex(a=>a.id===editAId);accs[i]=d}else accs.push(d);S.set('accs',accs);closeM('m-acc');populateAllAccounts();renderAccs();renderDash();renderHist();toast(editAId?'✅ Account updated':'✅ Account saved')}
+function renderTxs(){const c=document.getElementById('tx-list');if(!txs.length){c.innerHTML='<div style="color:var(--text2);padding:16px;text-align:center">No transactions yet</div>';return}c.innerHTML=txs.sort((a,b)=>new Date(b.date)-new Date(a.date)).map(t=>{const a=accs.find(x=>x.id===t.aid);const dep=t.type==='deposit';return`<div class="setting-item"><div><span class="tx-type ${dep?'tx-deposit':'tx-withdrawal'}">${dep?'📈 Deposit':'📉 Withdrawal'}</span><span style="margin-left:10px;font-size:12px;color:var(--text2)">${a?.name||'Unknown'} • ${t.date}</span></div><div style="display:flex;align-items:center;gap:10px"><span class="tx-amt ${dep?'tx-deposit-amt':'tx-withdrawal-amt'}">${dep?'+':'-'}$${t.amt.toFixed(2)}</span><button class="action-btn" onclick="delTx('${t.id}')">🗑️</button></div></div>`}).join('')}
+function showTxModal(){if(!accs.length)return toast('❌ Add an account first!');document.getElementById('tx-f').reset();document.getElementById('tx-date').value=today();populateAllAccounts();document.getElementById('m-tx').classList.add('active')}
+function saveTx(){ const aid=document.getElementById('tx-acc').value; const type=document.getElementById('tx-type').value; const amt=parseFloat(document.getElementById('tx-amt').value)||0; const date=document.getElementById('tx-date').value; if(!amt)return toast('❌ Enter amount'); const acc=accs.find(a=>a.id===aid); if(acc){ if(type==='deposit') acc.bal += amt; else acc.bal -= amt; S.set('accs',accs); } txs.push({id:gid(),aid,type,amt,date}); S.set('txs',txs); closeM('m-tx');renderTxs();populateAllAccounts();renderDash(); toast(`✅ ${type==='deposit'?'Deposit':'Withdrawal'} saved & balance updated`); }
+function delTx(id){ const tx=txs.find(t=>t.id===id); if(tx){ const acc=accs.find(a=>a.id===tx.aid); if(acc){ if(tx.type==='deposit') acc.bal -= tx.amt; else acc.bal += tx.amt; S.set('accs',accs); } } txs=txs.filter(t=>t.id!==id); S.set('txs',txs);renderTxs();populateAllAccounts();renderDash(); toast('✅ Transaction deleted & balance reverted'); }
+function toggleTheme(){document.body.classList.toggle('light-mode');theme=document.getElementById('theme-t').classList.toggle('active')?'dark':'light';S.set('theme',theme); if('serviceWorker' in navigator){ navigator.serviceWorker.getRegistration().then(reg=>{ if(reg) reg.active.postMessage({type:'CLEAR_CACHE'}); }); } }
+function clearAll(){document.getElementById('del-msg').textContent='⚠️ This will permanently delete ALL your data. This cannot be undone!';delCb=()=>{trades=[];accs=[];txs=[];rules=[];S.set('trades',[]);S.set('accs',[]);S.set('txs',[]);S.set('rules',[]);closeM('m-del');populateAllAccounts();renderAccs();renderTxs();renderRulesCheck();renderRulesList();renderDash();renderHist();toast('🗑️ All data cleared')};document.getElementById('del-btn').onclick=delCb;document.getElementById('m-del').classList.add('active')}
+function exportImage() { const sel = document.getElementById('export-acc'); sel.innerHTML = '<option value="all">All Accounts</option>'; accs.forEach(a => { sel.innerHTML += `<option value="${a.id}">${a.name}</option>`; }); document.getElementById('m-export').classList.add('active'); }
+async function generateExportImage() { closeM('m-export'); toast('⏳ Generating Image...'); const selectedAcc = document.getElementById('export-acc').value; const d = selectedAcc === 'all' ? trades : trades.filter(t => t.aid === selectedAcc); if (!d.length) { toast('❌ No trades found for selected account!'); return; } const streaks = calcStreaks(d); const total = d.length; const wins = d.filter(t => t.result === 'Win').length; const losses = d.filter(t => t.result === 'Loss').length; const be = d.filter(t => t.result === 'BE').length; const wr = total ? ((wins / total) * 100).toFixed(1) : '0.0'; const pnl = d.reduce((s, t) => s + t.pnl, 0); const gp = d.filter(t => t.pnl > 0).reduce((s, t) => s + t.pnl, 0); const gl = Math.abs(d.filter(t => t.pnl < 0).reduce((s, t) => s + t.pnl, 0)); const pf = gl === 0 ? (gp > 0 ? '∞' : '0') : (gp / gl).toFixed(2); const best = total ? Math.max(...d.map(t => t.pnl)) : 0; const avgRR = (() => { const rrs = d.filter(t => t.rr > 0); return rrs.length ? (rrs.reduce((s, t) => s + t.rr, 0) / rrs.length).toFixed(2) : '0'; })(); const allRules = RULE_KEYS.map(k => ({ label: RULE_LABELS[k], key: k })).concat(rules.map(r => ({ label: r.title, key: 'custom-' + r.id }))); let totalC = 0, totalP = 0; const ruleData = allRules.map(r => { const passed = d.filter(t => t.rules && t.rules.includes(r.key)).length; totalC += total; totalP += passed; return { label: r.label, pct: total ? Math.round((passed / total) * 100) : 0 }; }); const overallPct = totalC > 0 ? Math.round((totalP / totalC) * 100) : 0; const allEmo = [...POS, ...NEG]; const emoData = allEmo.map(e => ({ label: e.e + ' ' + e.n, count: d.filter(t => t.emo && t.emo.includes(e.e + ' ' + e.n)).length, isPos: POS.some(p => p.e + ' ' + p.n === e.e + ' ' + e.n) })).sort((a, b) => b.count - a.count); const accName = selectedAcc === 'all' ? 'All Accounts' : (accs.find(a => a.id === selectedAcc)?.name || 'Unknown'); const isDark = exportTheme === 'dark'; const bg = isDark ? '#0b1120' : '#f1f5f9'; const bg2 = isDark ? '#111827' : '#ffffff'; const bg3 = isDark ? '#1e293b' : '#e2e8f0'; const text = isDark ? '#e2e8f0' : '#1e293b'; const text2 = isDark ? '#94a3b8' : '#64748b'; const text3 = isDark ? '#64748b' : '#94a3b8'; const border = isDark ? '#1e293b' : '#e2e8f0'; const green = isDark ? '#10b981' : '#059669'; const red = isDark ? '#ef4444' : '#dc2626'; const accent = isDark ? '#818cf8' : '#6366f1'; const yellow = isDark ? '#fbbf24' : '#d97706'; const container = document.createElement('div'); container.style.cssText = `width:1600px;padding:40px;background:${bg};color:${text};font-family:-apple-system,BlinkMacSystemFont,sans-serif;position:absolute;left:-9999px;top:0;`; container.innerHTML = `<div style="display:flex;align-items:center;gap:20px;margin-bottom:30px;"><img src="https://i.ibb.co/m5jj1g8m/profile.png" style="width:70px;height:70px;border-radius:50%;box-shadow:0 8px 32px rgba(99,102,241,0.3);" onerror="this.style.display='none'"><div><div style="font-size:36px;font-weight:900;background:linear-gradient(135deg,${text},${accent},${yellow});-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Mr.Crazy</div><div style="font-size:14px;color:${text2};text-transform:uppercase;letter-spacing:3px;font-weight:600;">Trading Journal Report</div></div><div style="margin-left:auto;text-align:right;"><div style="color:${text3};font-size:14px;">Generated: ${new Date().toLocaleDateString()}</div><div style="color:${text3};font-size:14px;">Account: ${accName}</div><div style="color:${text3};font-size:14px;">Trades: ${total}</div></div></div><div style="background:${bg2};border:1px solid ${border};border-radius:16px;padding:30px;margin-bottom:20px;"><div style="font-size:16px;font-weight:700;color:${text};margin-bottom:20px;text-transform:uppercase;letter-spacing:1px;">PERFORMANCE SUMMARY</div><div style="display:grid;grid-template-columns:repeat(6,1fr);gap:16px;"><div style="background:${bg};padding:20px;border-radius:12px;border:1px solid ${border};"><div style="color:${text2};font-size:11px;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;">Total Trades</div><div style="font-size:28px;font-weight:800;color:${text};">${total}</div></div><div style="background:${bg};padding:20px;border-radius:12px;border:1px solid ${border};"><div style="color:${text2};font-size:11px;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;">Win Rate</div><div style="font-size:28px;font-weight:800;color:${parseFloat(wr)>=50?green:yellow};">${wr}%</div></div><div style="background:${bg};padding:20px;border-radius:12px;border:1px solid ${border};"><div style="color:${text2};font-size:11px;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;">Net P&L</div><div style="font-size:28px;font-weight:800;color:${pnl>=0?green:red};">${pnl>=0?'+':''}$${pnl.toFixed(2)}</div></div><div style="background:${bg};padding:20px;border-radius:12px;border:1px solid ${border};"><div style="color:${text2};font-size:11px;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;">Profit Factor</div><div style="font-size:28px;font-weight:800;color:${text};">${pf}</div></div><div style="background:${bg};padding:20px;border-radius:12px;border:1px solid ${border};"><div style="color:${text2};font-size:11px;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;">Best Trade</div><div style="font-size:28px;font-weight:800;color:${green};">+$${best.toFixed(2)}</div></div><div style="background:${bg};padding:20px;border-radius:12px;border:1px solid ${border};"><div style="color:${text2};font-size:11px;margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;">Avg R:R</div><div style="font-size:28px;font-weight:800;color:${accent};">1:${avgRR}</div></div></div><div style="margin-top:16px;display:flex;gap:20px;justify-content:center;color:${text2};font-size:14px;"><span>🟢 Wins: <b style="color:${green};">${wins}</b></span><span>🔴 Losses: <b style="color:${red};">${losses}</b></span><span>🟡 BE: <b style="color:${yellow};">${be}</b></span></div><div style="margin-top:12px;display:flex;gap:20px;justify-content:center;color:${text2};font-size:14px;"><span>🔥 Longest Win Streak: <b style="color:${green};">${streaks.longestWin}</b></span><span>📉 Longest Loss Streak: <b style="color:${red};">${streaks.longestLoss}</b></span><span>⚡ Current Streak: <b style="color:${streaks.currentWin>0?green:streaks.currentLoss>0?red:text3};">${streaks.currentWin > 0 ? streaks.currentWin + 'W' : streaks.currentLoss > 0 ? streaks.currentLoss + 'L' : 'None'}</b></span></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;"><div style="background:${bg2};border:1px solid ${border};border-radius:16px;padding:30px;"><div style="font-size:16px;font-weight:700;color:${accent};margin-bottom:20px;text-transform:uppercase;letter-spacing:1px;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">📋</span> Rule Adherence</div><div style="background:${isDark?'rgba(99,102,241,0.08)':'rgba(99,102,241,0.05)'};border:1px solid ${isDark?'rgba(99,102,241,0.2)':'rgba(99,102,241,0.15)'};border-radius:12px;padding:15px;text-align:center;margin-bottom:20px;"><div style="font-size:12px;color:${text2};margin-bottom:5px;">Overall Adherence</div><div style="font-size:32px;font-weight:900;color:${overallPct>=70?green:overallPct>=40?yellow:red};">${overallPct}%</div></div><div style="display:grid;gap:12px;">${ruleData.map(r=>{const col=r.pct>=70?green:r.pct>=40?yellow:red;return`<div><div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px;"><span style="color:${text2};">${r.label}</span><span style="color:${col};font-weight:700;">${r.pct}%</span></div><div style="background:${bg3};height:8px;border-radius:4px;overflow:hidden;"><div style="background:${col};height:100%;width:${r.pct}%;border-radius:4px;"></div></div></div>`}).join('')}</div></div><div style="background:${bg2};border:1px solid ${border};border-radius:16px;padding:30px;"><div style="font-size:16px;font-weight:700;color:${green};margin-bottom:20px;text-transform:uppercase;letter-spacing:1px;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">😊</span> Emotional Overview</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">${emoData.map(e=>{const col=e.isPos?green:red;const bgc=e.isPos?(isDark?'rgba(16,185,129,0.1)':'rgba(5,150,105,0.08)'):(isDark?'rgba(239,68,68,0.1)':'rgba(220,38,38,0.08)');const border2=e.isPos?green+'33':red+'33';return`<div style="background:${bgc};border:1px solid ${border2};border-radius:12px;padding:14px;display:flex;align-items:center;justify-content:space-between;"><span style="font-size:13px;color:${text};">${e.label}</span><span style="font-size:18px;font-weight:800;color:${col};">${e.count}x</span></div>`}).join('')}</div></div></div><div style="text-align:center;padding:30px;color:${text3};font-size:12px;letter-spacing:1px;border-top:1px solid ${border};margin-top:30px;">GENERATED BY MR.CRAZY TRADING JOURNAL • ${new Date().toLocaleDateString()}</div>`; document.body.appendChild(container); try { const canvas = await html2canvas(container, { scale: 2, backgroundColor: bg, useCORS: true }); const link = document.createElement('a'); link.download = `MrCrazy_Report_${today()}.png`; link.href = canvas.toDataURL('image/png'); link.click(); toast('✅ Image Exported!'); } catch (err) { toast('❌ Export failed'); console.error(err); } finally { document.body.removeChild(container); } }
+document.addEventListener('keydown', e => { if(e.key === 'Escape') { closeMenu(); closeDayModal(); closeImgM(); closeM('m-acc'); closeM('m-tx'); closeM('m-del'); closeM('m-rule'); closeM('m-export'); } });
+</script>
+</body>
+</html>
